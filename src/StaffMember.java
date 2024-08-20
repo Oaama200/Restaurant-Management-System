@@ -3,13 +3,13 @@ import java.util.Objects;
 public class StaffMember {
     private String Name;
     private int id;
-    private String roll;
+    private String role;
     private String salary;
 
-    public StaffMember(String name, int id, String roll, String salary) {
+    public StaffMember(String name, int id, String role, String salary) {
         this.Name = name;
         this.id = id;
-        this.roll = roll;
+        this.role = role;
         this.salary = salary;
     }
 
@@ -21,12 +21,12 @@ public class StaffMember {
         return id;
     }
 
-    public String getRoll() {
-        return roll;
+    public String getRole() {
+        return role;
     }
 
-    public void setRoll(String roll) {
-        this.roll = roll;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getSalary() {
@@ -41,12 +41,12 @@ public class StaffMember {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof StaffMember that)) return false;
-        return getId() == that.getId() && getName().equals(that.getName()) && getRoll().equals(that.getRoll()) && getSalary().equals(that.getSalary());
+        return getId() == that.getId() && getName().equals(that.getName()) && getRole().equals(that.getRole()) && getSalary().equals(that.getSalary());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getId(), getRoll(), getSalary());
+        return Objects.hash(getName(), getId(), getRole(), getSalary());
 
     }
     @Override
@@ -54,11 +54,11 @@ public class StaffMember {
 
         String staffName = getName();
         int staffId = getId();
-        String staffROll = getRoll();
+        String staffRole = getRole();
         String staffSalary = getSalary();
 
 
-        return String.format("Name: %-10s ID: %-10d Roll: %-10s Salary: %-10s",
-                staffName, staffId, staffROll, staffSalary);
+        return String.format("Name: %-10s ID: %-10d Role: %-10s Salary: %-10s",
+                staffName, staffId, staffRole, staffSalary);
     }
 }

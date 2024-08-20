@@ -8,8 +8,7 @@ public class Main {
     public static StaffManagement staffManagement = new StaffManagement();
 
     public static void main(String[] args) {
-        System.out.println("****** Welcome to Restaurant Management System *******");
-
+        Constants.printWelcome();
         while (true) {
             displayMenu();
         }
@@ -152,7 +151,6 @@ public class Main {
             double itemPrice = input.nextDouble();
             input.nextLine();
             menu.addItem(itemName, itemPrice);
-
         }
     }
 
@@ -206,13 +204,13 @@ public class Main {
         if (!staffManagement.checkIfIdExists(staffId)) {
             System.out.println("Id does not exist.");
         } else {
-            System.out.println("Enter the new Roll for the staff member:");
-            String staffRoll = input.nextLine();
+            System.out.println("Enter the new Role for the staff member:");
+            String staffRole = input.nextLine();
 
             System.out.println("Enter the new Salary for the staff member:");
             String staffSalary = input.nextLine();
 
-            staffManagement.updateStaffInfo(staffId, staffRoll, staffSalary);
+            staffManagement.updateStaffInfo(staffId, staffRole, staffSalary);
 
         }
     }
@@ -235,7 +233,7 @@ public class Main {
             System.out.println("Enter the new Staff Name:");
             String staffName = input.nextLine();
 
-            System.out.println("Enter the new Staff Roll:");
+            System.out.println("Enter the new Staff Role:");
             String staffRoll = input.nextLine();
             System.out.println("Enter the new Staff Salary:");
             String staffSalary = input.nextLine();
@@ -264,7 +262,7 @@ public class Main {
                 orderType = input.nextInt();
                 input.nextLine();
 
-                if (orderType >= 1 && orderType <= 3) {
+                if (orderType == Constants.DINE_IN || orderType == Constants.PICK_UP  || orderType == Constants.DELIVERY ) {
                     validSelection = true;
                 } else {
                     System.out.println("Invalid input. Please enter a valid number.");

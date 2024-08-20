@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Order {
+public class Order implements OrderOperations, FeeCalculable {
     private ArrayList<OrderItem> orderItems;
     private Menu menu;
 
@@ -9,6 +9,7 @@ public class Order {
         this.menu = menu;
     }
 
+    @Override
     public void placeOrder(String itemName, int quantity) {
         MenuItem menuItem = menu.findItemByName(itemName);
         if (menuItem != null) {
@@ -19,17 +20,8 @@ public class Order {
             System.out.println("Item not found in the menu.");
         }
     }
-    public double calculateDeliveryFee(int orderType) {
-        if (orderType == 3) { // Delivery order
-            double total = calculateTotal();
-            return total * 0.10; // 10% delivery fee
-        } else if (orderType == 2) {
-            return 1; // pick-up order
 
-        }
-        return 0; // dine-in order
-    }
-
+    @Override
     public double calculateTotal() {
         double total = 0;
         for (OrderItem orderItem : orderItems) {
@@ -37,42 +29,67 @@ public class Order {
         }
         return total;
     }
-    private double calculateTax() {
-        double total =calculateTotal();
-        double tax =  total*0.06;
+
+    @Override
+    public double calculateTax() {
+        double total = calculateTotal();
+        double tax = total * Constants.TAX_RATE;
         return tax;
     }
 
-    public void printOrder(int orderType) {
-        System.out.println("Order Summary:");
+    @Override
+    public double calculateDeliveryFee() {
+        return calculateTotal() * Constants.DELIVERY_FEE;
+    }
 
+    @Override
+    public double calculateServiceCharge() {
+        return calculateTotal() * Constants.SERVICE_FEE;
+    }
+
+    @Override
+    public void printOrder(int orderType) {
+
+        double deliveryFee = 0;
+        double serviceFee = 0;
         double tax = calculateTax();
-        double deliveryFee = calculateDeliveryFee(orderType);
-        double total = calculateTotal() + tax + deliveryFee;
+        double total;
         String orderTypeString;
         switch (orderType) {
             case 3:
-                orderTypeString = "Delivery";
+                orderTypeString = Constants.DELIVERY_NAME;
                 break;
             case 2:
-                orderTypeString = "Pick-up";
+                orderTypeString = Constants.PICK_UP_NAME;
                 break;
             default:
-                orderTypeString = "Dine-in";
+                orderTypeString = Constants.DINE_IN_NAME;
                 break;
         }
-        System.out.println("Order Type: " + orderTypeString);
+        System.out.println("Order Summary:");
+        System.out.printf("Order Type: " + orderTypeString + "\n");
+        System.out.println("___________________________________________");
+        System.out.println(String.format("%-10s | %-15s | %-10s", "Quantity", "Item", "Price"));
+        System.out.println("___________|_________________|_____________");
         for (OrderItem orderItem : orderItems) {
             System.out.println(orderItem);
         }
 
         // Print delivery fee
         if (orderType == 3) {
+            deliveryFee = calculateDeliveryFee();
             System.out.println("Delivery Fee: $" + String.format("%.2f", deliveryFee));
+        } else if (orderType == 1) {
+            serviceFee = calculateServiceCharge();
+            System.out.println("Service Fee: $" + String.format("%.2f", serviceFee));
+
         }
+        total = calculateTotal() + tax + deliveryFee + serviceFee;
 
         System.out.println("Tax: $" + String.format("%.2f", tax));
         System.out.println("Total: $" + String.format("%.2f", total));
+
+        Constants.printCurrentDateTime();
 
         System.out.println("Thank You, Come Again");
     }

@@ -1,16 +1,19 @@
 import java.util.ArrayList;
-public class Menu {
+
+public class Menu implements MenuOperations, SetupDefaults {
     private ArrayList<MenuItem> items;
+
     public Menu() {
         items = new ArrayList<>();
-        addDefaultItems();
+        addDefaults();
     }
 
-    private void addDefaultItems() {
+    @Override
+    public void addDefaults() {
         items.add(new MenuItem("Burger", 9.99));
         items.add(new MenuItem("Pizza", 15.99));
         items.add(new MenuItem("Fries", 5.99));
-        items.add(new MenuItem("Soda", 0.99));
+        items.add(new MenuItem("Soda", 100));
     }
 
     public void currentMenu() {
@@ -19,12 +22,14 @@ public class Menu {
         }
     }
 
-    public void addItem(String itemName, double price){
+    @Override
+    public void addItem(String itemName, double price) {
         MenuItem currentItem = new MenuItem(itemName, price);
         items.add(currentItem);
         System.out.println(itemName + " has been added");
     }
 
+    @Override
     public void deleteItem(String itemName) {
         MenuItem itemToDelete = findItemByName(itemName);
         if (itemToDelete != null) {
@@ -35,6 +40,7 @@ public class Menu {
         }
     }
 
+    @Override
     public void editItemPrice(String itemName, double itemPrice) {
         MenuItem itemToEdit = findItemByName(itemName);
         if (itemToEdit != null) {
@@ -47,7 +53,7 @@ public class Menu {
 
     public MenuItem findItemByName(String itemName) {
         for (MenuItem item : items) {
-            if (item.getItem().equalsIgnoreCase(itemName)) {
+            if (item.getItemName().equalsIgnoreCase(itemName)) {
                 return item;
             }
         }
@@ -56,7 +62,7 @@ public class Menu {
 
     public Boolean checkIfItemExists(String itemName) {
         for (MenuItem item : items) {
-            if (item.getItem().equalsIgnoreCase(itemName)) {
+            if (item.getItemName().equalsIgnoreCase(itemName)) {
                 return true;
             }
         }

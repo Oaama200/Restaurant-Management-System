@@ -1,23 +1,26 @@
 import java.util.ArrayList;
 
-public class StaffManagement {
-    private ArrayList<StaffMember> staffMember;
+public class StaffManagement implements StaffOperations, SetupDefaults{
+    final private ArrayList<StaffMember> staffMember;
 
     public StaffManagement(){
         staffMember = new ArrayList<>();
-        addDefaultStaff();
+        addDefaults();
     }
-    private void addDefaultStaff() {
-        staffMember.add(new StaffMember("John", 111, "cook", "60k"));
-        staffMember.add(new StaffMember("Lis", 222, "Host", "40k"));
-        staffMember.add(new StaffMember("Sam", 333, "Cashier", "40k"));
-    }
+
+    @Override
+    public void addDefaults() {
+            staffMember.add(new StaffMember("John", 111, "cook", "60k"));
+            staffMember.add(new StaffMember("Lis", 222, "Host", "40k"));
+            staffMember.add(new StaffMember("Sam", 333, "Cashier", "40k"));
+        }
     public void currentStaff(){
         for(StaffMember staff : staffMember){
             System.out.println(staff);
         }
     }
 
+    @Override
     public void hireStaffMember(String name, int id, String roll, String salary){
 
         StaffMember newStaff = new StaffMember(name, id, roll, salary);
@@ -28,6 +31,7 @@ public class StaffManagement {
             System.out.println("Staff member hired successfully.");
         }
     }
+    @Override
     public void fireStaffMember(int id){
 
         StaffMember StaffToFire = findStaffById(id);
@@ -39,11 +43,11 @@ public class StaffManagement {
         }
     }
 
-    public void updateStaffInfo( int id, String roll, String salary){
+    public void updateStaffInfo( int id, String role, String salary){
         StaffMember updateStaff = findStaffById(id);
         if (updateStaff != null) {
             //updateStaff.setName(name);
-            updateStaff.setRoll(roll);
+            updateStaff.setRole(role);
             updateStaff.setSalary(salary);
             System.out.println("Staff with ID "+ id + " has been Updated.");
         } else {

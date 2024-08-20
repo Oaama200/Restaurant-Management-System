@@ -1,30 +1,20 @@
 import java.util.Objects;
 
-public class MenuItem {
-
-    private String itemName;
-    private double price;
-
+public class MenuItem extends BaseMenuItem{
     public MenuItem(String item, double price) {
-        this.itemName = item;
-        this.price = price;
+        super(item, price);
     }
-
-    public String getItem() {
-        return itemName;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
     public void setPrice(double price) {
         this.price = price;
+    }
+    @Override
+    public String getItemDetails() {
+        return String.format("%-20s: $%5.2f", itemName, price);
     }
 
     @Override
     public String toString() {
-        return itemName + ": $" + price;
+        return getItemDetails();
     }
 
     @Override

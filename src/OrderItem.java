@@ -1,10 +1,11 @@
 import java.util.Objects;
 
-public class OrderItem {
+public class OrderItem extends BaseMenuItem{
     private MenuItem menuItem;
     private int quantity;
 
     public OrderItem(MenuItem menuItem, int quantity) {
+        super(menuItem.getItemName(), menuItem.getPrice() );
         this.menuItem = menuItem;
         this.quantity = quantity;
     }
@@ -17,14 +18,14 @@ public class OrderItem {
     }
 
     @Override
+    public String getItemDetails(){
+        return String.format("%-10d | %-15s | $%-10.2f",
+                quantity,itemName, price);
+    }
+
+    @Override
     public String toString() {
-
-        String itemName = menuItem.getItem();
-        double itemPrice = menuItem.getPrice();
-        double totalItemCost = itemPrice * quantity;
-
-        return String.format("Item: %-15s Quantity: %-10d Price: $%-10.2f Total: $%-10.2f",
-                itemName, quantity, itemPrice, totalItemCost);
+        return getItemDetails();
     }
 
     @Override
