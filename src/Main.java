@@ -9,46 +9,58 @@ public class Main {
 
     public static void main(String[] args) {
         Constants.printWelcome();
+        Constants.clearOrderFile();
         while (true) {
-            displayMenu();
+            try {
+                displayMenu();
+            } catch (InvalidSelectionException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
+    private static void printMenu(String[] options) {
+        for (String option : options) {
+            System.out.println(option);
+        }
+        System.out.print("Select a valid option: ");
+    }
 
-    private static void displayMenu() {
-        System.out.println("MAIN MENU");
-        System.out.println("1: Employees");
-        System.out.println("2: Customers");
-        System.out.println("0: Quit");
-        System.out.print("Select an option: ");
-        userSelection = input.nextLine();
+    private static String getUserSelection() {
+        return input.nextLine();
+    }
+
+    private static void displayMenu() throws InvalidSelectionException {
+        String[] MainMenuOptions = {"MAIN MENU", "1: Employees", "2: Customers", "0: Quit"};
+        printMenu(MainMenuOptions);
+        userSelection = getUserSelection();
         switch (userSelection) {
-            case "1":
+            case Constants.EMPLOYEE_MENU_OPTION:
                 displayEmployeeMenu();
                 break;
 
-            case "2":
+            case Constants.CUSTOMER_MENU_OPTION:
                 displayCustomerMenu();
                 break;
 
-            case "0":
+            case Constants.QUIT_MENU_OPTION:
                 System.exit(0);
-
+                break;
             default:
-                System.out.println("Invalid selection.");
+                throw new InvalidSelectionException();
         }
     }
 
     private static void displayCustomerMenu() {
-
+        String[] customerMenuOptions = {
+                "CUSTOMER MENU",
+                "1: Display Restaurant Menu",
+                "2: Place an Order",
+                "3: Back to Main Menu",
+                "0: Quit"
+        };
         while (true) {
-            System.out.println("CUSTOMER MENU");
-            System.out.println("1: Display Restaurant Menu");
-            System.out.println("2: Place an Order");
-            System.out.println("3: Back to Main Menu");
-            System.out.println("0: Quit");
-            System.out.print("Select an option: ");
-
-            userSelection = input.nextLine();
+            printMenu(customerMenuOptions);
+            userSelection = getUserSelection();
             switch (userSelection) {
                 case "1":
                     menu.currentMenu();
@@ -56,7 +68,16 @@ public class Main {
                     break;
 
                 case "2":
-                    int orderType = placeOrderMenu();
+                    int orderType = 0;
+                    boolean orderPlaced = false;
+                    while (!orderPlaced) {
+                        try {
+                            orderType = placeOrderMenu();
+                            orderPlaced = true;
+                        } catch (InvalidSelectionException e) {
+                            System.out.println(e.getMessage());
+                        }
+                    }
                     order.printOrder(orderType);
                     order = new Order(menu); // Reset the order object
                     System.out.println();
@@ -64,30 +85,30 @@ public class Main {
 
                 case "3":
                     return; // Go back to the previous menu
-
-                case "0":
+                case Constants.QUIT_MENU_OPTION:
                     System.exit(0);
-
+                    break;
                 default:
                     System.out.println("Invalid selection.");
+                    break;
             }
         }
     }
 
     private static void displayEmployeeMenu() {
+        String[] employeeMenuOptions = {
+                "EMPLOYEE MENU",
+                "1: Display Menu",
+                "2: Add an Item",
+                "3: Delete an Item by Name",
+                "4: Edit Price by Name",
+                "5: Staff Management",
+                "6: Back to Main Menu",
+                "0: Quit"
+        };
         while (true) {
-
-            System.out.println("EMPLOYEE MENU");
-            System.out.println("1: Display Menu");
-            System.out.println("2: Add an Item");
-            System.out.println("3: Delete an Item by Name");
-            System.out.println("4: Edit Price by Name");
-            System.out.println("5: Staff Management");
-            System.out.println("6: Back to Main Menu");
-            System.out.println("0: Quit");
-            System.out.print("Select an option: ");
-
-            userSelection = input.nextLine();
+            printMenu(employeeMenuOptions);
+            userSelection = getUserSelection();
             switch (userSelection) {
                 case "1":
                     menu.currentMenu();
@@ -112,60 +133,74 @@ public class Main {
                 case "6":
                     return;
 
-                case "0":
+                case Constants.QUIT_MENU_OPTION:
                     System.exit(0);
+                    break;
 
                 default:
                     System.out.println("Response not recognized.");
+                    break;
             }
         }
     }
 
     private static void editingItemPrice() {
+
         System.out.println("Enter the name for the item you want to edit:");
         String itemName = input.nextLine();
-        if (!menu.checkIfItemExists(itemName)) {
-            System.out.println("Item not found.");
-        } else {
-            System.out.println("Enter the new price for the item:");
-            double itemPrice = input.nextDouble();
-            input.nextLine();
-            menu.editItemPrice(itemName, itemPrice);
-
+        try {
+            if (!menu.checkIfItemExists(itemName)) {
+                throw new DataNotFoundException();
+                //System.out.println("NOT FOUND");
+            } else {
+                System.out.println("Enter the new price for the item:");
+                double itemPrice = input.nextDouble();
+                input.nextLine();
+                menu.editingItemPrice(itemName, itemPrice);
+            }
+        } catch (DataNotFoundException e) {
+            System.out.println(e.getMessage());
         }
     }
 
     private static void deletingItem() {
         System.out.println("Enter the name for the item to delete:");
         String itemName = input.nextLine();
-        menu.deleteItem(itemName);
+        menu.deletingItem(itemName);
     }
 
     private static void addingItem() {
         System.out.println("Enter the name for the item to add:");
         String itemName = input.nextLine();
-        if (menu.checkIfItemExists(itemName)) {
-            System.out.println(itemName + " already exists.");
-        } else {
+        try {
+            if (menu.checkIfItemExists(itemName)) {
+                throw new NameAlreadyExistsException();
+
+            }
+
             System.out.println("Enter the price for the item:");
             double itemPrice = input.nextDouble();
             input.nextLine();
-            menu.addItem(itemName, itemPrice);
+            menu.addingItem(itemName, itemPrice);
+        } catch (NameAlreadyExistsException e) {
+            System.out.println(e.getMessage());
         }
+
     }
 
     private static void displayStaffManagementMenu() {
+        String[] staffManagementMenuOptions = {
+                "STAFF MANAGEMENT MENU",
+                "1: Display Staff",
+                "2: Hire a Staff Member",
+                "3: Fire a Staff Member",
+                "4: Update Staff Information",
+                "5: Back to Employee Menu",
+                "0: Quit"
+        };
         while (true) {
-            System.out.println("STAFF MANAGEMENT MENU");
-            System.out.println("1: Display Staff");
-            System.out.println("2: Hire a Staff Member");
-            System.out.println("3: Fire a Staff Member");
-            System.out.println("4: Update Staff Information");
-            System.out.println("5: Back to Employee Menu");
-            System.out.println("0: Quit");
-            System.out.print("Select an option: ");
-
-            String userSelection = input.nextLine();
+            printMenu(staffManagementMenuOptions);
+             userSelection = getUserSelection();
 
             switch (userSelection) {
                 case "1":
@@ -187,109 +222,138 @@ public class Main {
                 case "5":
                     return;
 
-                case "0":
+                case Constants.QUIT_MENU_OPTION:
                     System.exit(0);
+                    break;
 
                 default:
                     System.out.println("Response not recognized.");
+                    break;
             }
         }
 
     }
 
     private static void handleUpdateStaffInfo() {
-        System.out.println("Enter the Id for the staff member to update:");
-        int staffId = input.nextInt();
-        input.nextLine();
-        if (!staffManagement.checkIfIdExists(staffId)) {
-            System.out.println("Id does not exist.");
-        } else {
-            System.out.println("Enter the new Role for the staff member:");
-            String staffRole = input.nextLine();
+        try {
 
-            System.out.println("Enter the new Salary for the staff member:");
-            String staffSalary = input.nextLine();
+            System.out.println("Enter the Id for the staff member to update:");
+            int staffId = input.nextInt();
+            input.nextLine();
+            if (!staffManagement.checkIfIdExists(staffId)) {
+                //System.out.println("Id does not exist.");
+                throw new DataNotFoundException();
+            } else {
+                System.out.println("Enter the new Role for the staff member:");
+                String staffRole = input.nextLine();
 
-            staffManagement.updateStaffInfo(staffId, staffRole, staffSalary);
+                System.out.println("Enter the new Salary for the staff member:");
+                String staffSalary = input.nextLine();
 
+                staffManagement.handleUpdateStaffInfo(staffId, staffRole, staffSalary);
+
+            }
+        } catch (DataNotFoundException e) {
+            System.out.println(e.getMessage());
         }
     }
 
     private static void handleFireStaffMember() {
         System.out.println("Enter the Id for the staff to fire");
         int staffId = input.nextInt();
-        staffManagement.fireStaffMember(staffId);
+        staffManagement.handleFireStaffMember(staffId);
         input.nextLine();
     }
 
     private static void handleHireStaffMember() {
-        System.out.println("Enter the new Staff Id:");
-        int staffId = input.nextInt();
-        input.nextLine();
-        if (staffManagement.checkIfIdExists(staffId)) {
-            System.out.println(staffId + " already exists.");
+        try {
+
+            System.out.println("Enter the new Staff Id:");
+            int staffId = input.nextInt();
+            input.nextLine();
+            if (staffManagement.checkIfIdExists(staffId)) {
+                //System.out.println(staffId + " already exists.");
+                throw new NameAlreadyExistsException("Staff Already Hired Exception");
+            } else {
+
+                System.out.println("Enter the new Staff Name:");
+                String staffName = input.nextLine();
+
+                System.out.println("Enter the new Staff Role:");
+                String staffRoll = input.nextLine();
+                System.out.println("Enter the new Staff Salary:");
+                String staffSalary = input.nextLine();
+
+                staffManagement.handleHireStaffMember(staffName, staffId, staffRoll, staffSalary);
+
+            }
+        } catch (NameAlreadyExistsException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    private static int placeOrderMenu() throws InvalidSelectionException {
+        String[] orderTypeOptions = {
+                "Please select an option:",
+                "For dining in select: 1",
+                "For pick-up select: 2",
+                "For delivery select: 3"
+        };
+        printMenu(orderTypeOptions);
+
+        int orderType = getValidOrderType();
+
+        while (true) {
+            menu.currentMenu();
+            addItemToOrder();
+
+            if (!continueOrdering()) {
+                break;
+            }
+        }
+
+        return orderType;
+    }
+
+    private static int getValidOrderType() throws InvalidSelectionException {
+        if (input.hasNextInt()) {
+            int orderType = input.nextInt();
+            input.nextLine(); // Consume newline
+
+            if (orderType == Constants.DINE_IN || orderType == Constants.PICK_UP || orderType == Constants.DELIVERY) {
+                return orderType;
+            }
         } else {
+            input.nextLine(); // Consume invalid input
+        }
+        throw new InvalidSelectionException("Invalid input. Please enter a valid number.");
+    }
 
-            System.out.println("Enter the new Staff Name:");
-            String staffName = input.nextLine();
+    private static void addItemToOrder() {
+        System.out.println("Enter the name of the item to add to your order:");
+        String itemName = input.nextLine();
 
-            System.out.println("Enter the new Staff Role:");
-            String staffRoll = input.nextLine();
-            System.out.println("Enter the new Staff Salary:");
-            String staffSalary = input.nextLine();
-
-
-            staffManagement.hireStaffMember(staffName, staffId, staffRoll, staffSalary);
-
+        if (menu.checkIfItemExists(itemName)) {
+            System.out.println("Enter the quantity:");
+            int quantity = input.nextInt();
+            input.nextLine(); // Consume newline
+            order.placeOrder(itemName, quantity);
+        } else {
+            System.out.println("Item not found in the menu.");
         }
     }
 
-    private static int placeOrderMenu() {
-        String itemName;
-        int quantity;
-        int selection;
-        int orderType = 0;
-
-        boolean validSelection = false;
-
+    private static boolean continueOrdering() {
+        String[] continueOrderingMenu = {
+                "Press 1 to continue adding to your order",
+                "Press 2 to check out"
+        };
         do {
-            System.out.println("Please select an option:");
-            System.out.println("For dining in select: 1");
-            System.out.println("For pick-up select: 2");
-            System.out.println("For delivery select: 3");
-
-            if (input.hasNextInt()) {
-                orderType = input.nextInt();
-                input.nextLine();
-
-                if (orderType == Constants.DINE_IN || orderType == Constants.PICK_UP  || orderType == Constants.DELIVERY ) {
-                    validSelection = true;
-                } else {
-                    System.out.println("Invalid input. Please enter a valid number.");
-                }
-            } else {
-                System.out.println("Invalid input. Please enter a valid number.");
-                input.nextLine();
+            printMenu(continueOrderingMenu);
+            userSelection = getUserSelection();
+            if (userSelection.equals("2")){
+                return false;
             }
-        } while (!validSelection);
-
-
-        do {
-            menu.currentMenu();
-            System.out.println("Enter the name of the item to add to your order:");
-            itemName = input.nextLine();
-            if (menu.checkIfItemExists(itemName)) {
-                System.out.println("Enter the quantity:");
-                quantity = input.nextInt();
-                input.nextLine();
-                order.placeOrder(itemName, quantity);
-            } else {
-                System.out.println("Item not found.");
-            }
-            System.out.println("Press 1 to continue adding to your order \nPress 2 to check out");
-            selection = input.nextInt();
-            input.nextLine(); // Consume newline
-        } while (selection == 1);
-        return orderType;
+        }while (!userSelection.equals("1"));
+        return true;
     }
 }

@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Objects;
 
 public class MenuItem extends BaseMenuItem{
@@ -9,7 +10,8 @@ public class MenuItem extends BaseMenuItem{
     }
     @Override
     public String getItemDetails() {
-        return String.format("%-20s: $%5.2f", itemName, price);
+        DecimalFormat currencyFormat = new DecimalFormat("$#,##0.00");
+        return String.format("%-20s: %5s", itemName, currencyFormat.format(price));
     }
 
     @Override

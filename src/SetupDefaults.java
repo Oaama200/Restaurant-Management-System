@@ -1,5 +1,5 @@
 public interface SetupDefaults {
-    void addDefaults();
+    void initializeDefaultItems();
 
 
 }

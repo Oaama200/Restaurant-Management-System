@@ -1,20 +1,20 @@
 import java.util.Objects;
 
 public class StaffMember {
-    private String Name;
+    private String name;
     private int id;
     private String role;
     private String salary;
 
     public StaffMember(String name, int id, String role, String salary) {
-        this.Name = name;
+        this.name = name;
         this.id = id;
         this.role = role;
         this.salary = salary;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public int getId() {
@@ -51,14 +51,7 @@ public class StaffMember {
     }
     @Override
     public String toString() {
-
-        String staffName = getName();
-        int staffId = getId();
-        String staffRole = getRole();
-        String staffSalary = getSalary();
-
-
         return String.format("Name: %-10s ID: %-10d Role: %-10s Salary: %-10s",
-                staffName, staffId, staffRole, staffSalary);
+                name, id, role, salary);
     }
 }

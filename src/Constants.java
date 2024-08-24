@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -13,6 +15,9 @@ public final class Constants {
     public static final String PICK_UP_NAME;
     public static final String DELIVERY_NAME;
     public static final String WELCOME_MESSAGE;
+    public static final String EMPLOYEE_MENU_OPTION = "1";
+    public static final String CUSTOMER_MENU_OPTION = "2";
+    public static final String QUIT_MENU_OPTION = "0";
     static {
         TAX_RATE = 0.06;
         SERVICE_FEE = 0.05;
@@ -25,16 +30,28 @@ public final class Constants {
         PICK_UP_NAME = "Pick-up";
         DELIVERY_NAME = "Delivery";
         WELCOME_MESSAGE = "****** Welcome to Restaurant Management System *******";
+
+
+    }
+    public static final void clearOrderFile() {
+        try (FileWriter fileWriter = new FileWriter("order_summary.txt", false)) {
+            // Writing an empty string to the file, which clears its contents
+            fileWriter.write("");
+        } catch (IOException e) {
+            System.out.println("An error occurred while clearing the order summary file.");
+            e.printStackTrace();
+        }
     }
 
-    public static final void printCurrentDateTime() {
+    public static final String printCurrentDateTime() {
         LocalDateTime currentDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
         String formattedDateTime = currentDateTime.format(formatter);
-        System.out.println("Date and Time: " + formattedDateTime);
+        return "Date and Time: " + formattedDateTime;
     }
 
     public static final void printWelcome() {
         System.out.println(WELCOME_MESSAGE);
     }
 }
+

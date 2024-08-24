@@ -5,11 +5,11 @@ public class Menu implements MenuOperations, SetupDefaults {
 
     public Menu() {
         items = new ArrayList<>();
-        addDefaults();
+        initializeDefaultItems();
     }
 
     @Override
-    public void addDefaults() {
+    public void initializeDefaultItems() {
         items.add(new MenuItem("Burger", 9.99));
         items.add(new MenuItem("Pizza", 15.99));
         items.add(new MenuItem("Fries", 5.99));
@@ -21,34 +21,35 @@ public class Menu implements MenuOperations, SetupDefaults {
             System.out.println(item);
         }
     }
-
     @Override
-    public void addItem(String itemName, double price) {
+    public void addingItem(String itemName, double price) {
         MenuItem currentItem = new MenuItem(itemName, price);
         items.add(currentItem);
         System.out.println(itemName + " has been added");
     }
-
     @Override
-    public void deleteItem(String itemName) {
+    public void deletingItem(String itemName) {
+        try{
         MenuItem itemToDelete = findItemByName(itemName);
         if (itemToDelete != null) {
             items.remove(itemToDelete);
             System.out.println(itemName + " has been deleted.");
-        } else {
-            System.out.println("Item not found.");
+        }else{
+
+            throw new DataNotFoundException();
+        }
+        }catch (DataNotFoundException e){
+            System.out.println(e.getMessage());
         }
     }
 
     @Override
-    public void editItemPrice(String itemName, double itemPrice) {
-        MenuItem itemToEdit = findItemByName(itemName);
-        if (itemToEdit != null) {
-            itemToEdit.setPrice(itemPrice);
-            System.out.println(itemName + " has been updated.");
-        } else {
-            System.out.println("Item not found.");
-        }
+    public void editingItemPrice(String itemName, double itemPrice) {
+            MenuItem itemToEdit = findItemByName(itemName);
+            if (itemToEdit != null) {
+                itemToEdit.setPrice(itemPrice);
+                System.out.println(itemName + " has been updated.");
+            }
     }
 
     public MenuItem findItemByName(String itemName) {
@@ -61,12 +62,6 @@ public class Menu implements MenuOperations, SetupDefaults {
     }
 
     public Boolean checkIfItemExists(String itemName) {
-        for (MenuItem item : items) {
-            if (item.getItemName().equalsIgnoreCase(itemName)) {
-                return true;
-            }
-        }
-        return false;
+            return findItemByName(itemName) != null;
     }
-
 }

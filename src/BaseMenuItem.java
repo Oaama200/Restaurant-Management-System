@@ -1,5 +1,5 @@
 public abstract class BaseMenuItem {
-    protected String itemName;
+    protected final String itemName;
     protected double price;
 
     public BaseMenuItem(String itemName, double price) {
