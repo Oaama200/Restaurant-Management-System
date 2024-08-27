@@ -1,0 +1,58 @@
+
+2024-08-27 15:26:27.215 [main] INFO  Main - Application Started
+2024-08-27 15:26:27.219 [main] INFO  Main - Order file cleared
+2024-08-27 15:26:27.219 [main] INFO  Main - Loading Main Menu
+2024-08-27 15:26:27.219 [main] INFO  Main - Printing Menu
+2024-08-27 15:26:27.219 [main] DEBUG Main - Getting user selection
+2024-08-27 15:26:30.612 [main] DEBUG Main - User Selected: 1
+2024-08-27 15:26:30.612 [main] INFO  Main - Displaying Employee Menu
+2024-08-27 15:26:30.612 [main] INFO  Main - Printing Menu
+2024-08-27 15:26:30.612 [main] DEBUG Main - Getting user selection
+2024-08-27 15:26:52.249 [main] DEBUG Main - User selected: 2
+2024-08-27 15:26:52.249 [main] INFO  Main - Adding a menu item
+2024-08-27 15:27:15.479 [main] INFO  Main - User entered an item name to add: Apple
+2024-08-27 15:27:20.075 [main] INFO  Main - User entered the price for the item: 5.99
+2024-08-27 15:27:20.075 [main] INFO  Main - Printing Menu
+2024-08-27 15:27:20.076 [main] DEBUG Main - Getting user selection
+2024-08-27 15:27:23.539 [main] DEBUG Main - User selected: 1
+2024-08-27 15:27:23.539 [main] INFO  Main - Displaying Restaurant Menu
+2024-08-27 15:27:23.543 [main] INFO  Main - Printing Menu
+2024-08-27 15:27:23.543 [main] DEBUG Main - Getting user selection
+2024-08-27 15:27:41.473 [main] DEBUG Main - User selected: 6
+2024-08-27 15:27:41.473 [main] INFO  Main - Returning to Main Menu
+2024-08-27 15:27:41.473 [main] INFO  Main - Loading Main Menu
+2024-08-27 15:27:41.473 [main] INFO  Main - Printing Menu
+2024-08-27 15:27:41.474 [main] DEBUG Main - Getting user selection
+2024-08-27 15:27:43.863 [main] DEBUG Main - User Selected: 2
+2024-08-27 15:27:43.864 [main] INFO  Main - Displaying Customer Menu
+2024-08-27 15:27:43.864 [main] INFO  Main - Printing Menu
+2024-08-27 15:27:43.864 [main] DEBUG Main - Getting user selection
+2024-08-27 15:27:46.033 [main] DEBUG Main - User selected: 2
+2024-08-27 15:27:46.033 [main] INFO  Main - Placing an Order
+2024-08-27 15:27:46.033 [main] INFO  Main - Printing Menu
+2024-08-27 15:27:46.034 [main] INFO  Main - validating order type
+2024-08-27 15:27:52.451 [main] INFO  Main - User selected a valid order type: 3
+2024-08-27 15:27:52.452 [main] INFO  Main - Order type selected: 3
+2024-08-27 15:27:52.452 [main] INFO  Main - displaying current menu
+2024-08-27 15:27:52.453 [main] INFO  Main - Adding item to order
+2024-08-27 15:28:02.110 [main] INFO  Main - Name entered: Apple
+2024-08-27 15:28:02.112 [main] INFO  Main - Item found in the menu: Apple
+2024-08-27 15:28:06.861 [main] INFO  Main - quantity entered: 2
+2024-08-27 15:28:06.863 [main] INFO  Main - Prompting user to continue ordering or check out.
+2024-08-27 15:28:06.863 [main] INFO  Main - Printing Menu
+2024-08-27 15:28:06.863 [main] DEBUG Main - Getting user selection
+2024-08-27 15:28:14.157 [main] INFO  Main - User chose to continue ordering.
+2024-08-27 15:28:14.157 [main] INFO  Main - displaying current menu
+2024-08-27 15:28:14.158 [main] INFO  Main - Adding item to order
+2024-08-27 15:28:22.417 [main] INFO  Main - Name entered: Soda
+2024-08-27 15:28:22.417 [main] INFO  Main - Item found in the menu: Soda
+2024-08-27 15:28:24.159 [main] INFO  Main - quantity entered: 1
+2024-08-27 15:28:24.159 [main] INFO  Main - Prompting user to continue ordering or check out.
+2024-08-27 15:28:24.160 [main] INFO  Main - Printing Menu
+2024-08-27 15:28:24.160 [main] DEBUG Main - Getting user selection
+2024-08-27 15:28:26.715 [main] INFO  Main - User chose to check out.
+2024-08-27 15:28:26.715 [main] INFO  Main - User has chosen to stop ordering
+2024-08-27 15:28:26.727 [main] INFO  Main - Printing Menu
+2024-08-27 15:28:26.728 [main] DEBUG Main - Getting user selection
+2024-08-27 15:28:31.143 [main] DEBUG Main - User selected: 0
+2024-08-27 15:28:31.143 [main] INFO  Main - Terminating the application

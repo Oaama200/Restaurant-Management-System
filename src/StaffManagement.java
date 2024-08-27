@@ -11,9 +11,9 @@ public class StaffManagement implements StaffOperations, SetupDefaults{
 
     @Override
     public void initializeDefaultItems() {
-        staffMembers.add(new StaffMember("John", 111, "cook", "60k"));
-        staffMembers.add(new StaffMember("Lis", 222, "Host", "40k"));
-        staffMembers.add(new StaffMember("Sam", 333, "Cashier", "40k"));
+        staffMembers.add(new StaffMember("John", 111, "cook", 60000));
+        staffMembers.add(new StaffMember("Lis", 222, "Host", 40000));
+        staffMembers.add(new StaffMember("Sam", 333, "Cashier", 50000));
         }
     public void currentStaff(){
         for(StaffMember staff : staffMembers){
@@ -21,7 +21,7 @@ public class StaffManagement implements StaffOperations, SetupDefaults{
         }
     }
 
-    public void handleHireStaffMember(String name, int id, String role, String salary){
+    public void handleHireStaffMember(String name, int id, String role, double salary){
 
         StaffMember newStaff = new StaffMember(name, id, role, salary);
         staffMembers.add(newStaff);
@@ -31,7 +31,6 @@ public class StaffManagement implements StaffOperations, SetupDefaults{
     @Override
     public void handleFireStaffMember(int id){
         try {
-
         StaffMember StaffToFire = findStaffById(id);
         if (StaffToFire != null) {
             staffMembers.remove(StaffToFire);
@@ -42,10 +41,9 @@ public class StaffManagement implements StaffOperations, SetupDefaults{
         }catch (DataNotFoundException e){
             System.out.println(e.getMessage());
         }
-
     }
 
-    public void handleUpdateStaffInfo(int id, String role, String salary){
+    public void handleUpdateStaffInfo(int id, String role, double salary){
             StaffMember updateStaff = findStaffById(id);
             if (updateStaff != null) {
                 updateStaff.setRole(role);

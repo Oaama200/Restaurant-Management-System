@@ -4,9 +4,9 @@ public class StaffMember {
     private String name;
     private int id;
     private String role;
-    private String salary;
+    private double salary;
 
-    public StaffMember(String name, int id, String role, String salary) {
+    public StaffMember(String name, int id, String role, double salary) {
         this.name = name;
         this.id = id;
         this.role = role;
@@ -29,11 +29,11 @@ public class StaffMember {
         this.role = role;
     }
 
-    public String getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
@@ -41,7 +41,7 @@ public class StaffMember {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof StaffMember that)) return false;
-        return getId() == that.getId() && getName().equals(that.getName()) && getRole().equals(that.getRole()) && getSalary().equals(that.getSalary());
+        return getId() == that.getId() && getName().equals(that.getName()) && getRole().equals(that.getRole()) && getSalary()==(that.getSalary());
     }
 
     @Override

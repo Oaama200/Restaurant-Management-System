@@ -28,7 +28,6 @@ public class Order implements OrderOperations, FeeCalculable {
         double total = 0;
         for (OrderItem orderItem : orderItems) {
             total += orderItem.getPrice() * orderItem.getQuantity();
-            //total += orderItem.getMenuItem().getPrice() * orderItem.getQuantity();
         }
         return total;
     }
@@ -68,8 +67,6 @@ public class Order implements OrderOperations, FeeCalculable {
 
         printToConsole(orderSummary);
         writeToFile(orderSummary);
-
-
     }
 
     private String getOrderTypeString(int orderType) {
