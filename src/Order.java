@@ -3,26 +3,27 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Order implements OrderOperations, FeeCalculable {
-    private ArrayList<OrderItem> orderItems;
-    private Menu menu;
+import java.util.List;
 
+public class Order implements OrderOperations, FeeCalculable {
+    private final List<OrderItem> orderItems;
+    private final CustomLinkedList<OrderItem> orderHistory;
+    private final Menu menu;
     public Order(Menu menu) {
         this.orderItems = new ArrayList<>();
+        this.orderHistory = new CustomLinkedList<>();
         this.menu = menu;
     }
-
     @Override
     public void placeOrder(String itemName, int quantity) {
             MenuItem menuItem = menu.findItemByName(itemName);
             if (menuItem != null) {
                 OrderItem orderItem = new OrderItem(menuItem, quantity);
                 orderItems.add(orderItem);
-                System.out.println(String.format("%d %s(s) added to the order.", quantity, itemName));
-
+                orderHistory.add(orderItem);
+                System.out.printf("%d %s(s) added to the order.%n", quantity, itemName);
             }
     }
-
     @Override
     public double calculateTotal() {
         double total = 0;
@@ -35,8 +36,7 @@ public class Order implements OrderOperations, FeeCalculable {
     @Override
     public double calculateTax() {
         double total = calculateTotal();
-        double tax = total * Constants.TAX_RATE;
-        return tax;
+        return total * Constants.TAX_RATE;
     }
 
     @Override
@@ -57,7 +57,6 @@ public class Order implements OrderOperations, FeeCalculable {
         double total;
         String orderTypeString = getOrderTypeString(orderType);
         StringBuilder orderSummary = new StringBuilder();
-
         appendOrderHeader(orderSummary, orderTypeString);
         appendOrderItems(orderSummary);
         appendFees(orderSummary, orderType, deliveryFee, serviceFee);
@@ -127,5 +126,4 @@ public class Order implements OrderOperations, FeeCalculable {
             e.printStackTrace();
         }
     }
-
 }

@@ -10,7 +10,6 @@ public final class Constants {
     public static final int DINE_IN;
     public static final int PICK_UP;
     public static final int DELIVERY;
-
     public static final String DINE_IN_NAME;
     public static final String PICK_UP_NAME;
     public static final String DELIVERY_NAME;
@@ -30,10 +29,8 @@ public final class Constants {
         PICK_UP_NAME = "Pick-up";
         DELIVERY_NAME = "Delivery";
         WELCOME_MESSAGE = "****** Welcome to Restaurant Management System *******";
-
-
     }
-    public static final void clearOrderFile() {
+    public static  void clearOrderFile() {
         try (FileWriter fileWriter = new FileWriter("order_summary.txt", false)) {
             // Writing an empty string to the file, which clears its contents
             fileWriter.write("");
@@ -43,14 +40,14 @@ public final class Constants {
         }
     }
 
-    public static final String printCurrentDateTime() {
+    public static String printCurrentDateTime() {
         LocalDateTime currentDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
         String formattedDateTime = currentDateTime.format(formatter);
         return "Date and Time: " + formattedDateTime;
     }
 
-    public static final void printWelcome() {
+    public static void printWelcome() {
         System.out.println(WELCOME_MESSAGE);
     }
 }

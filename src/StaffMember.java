@@ -1,8 +1,8 @@
 import java.util.Objects;
 
 public class StaffMember {
-    private String name;
-    private int id;
+    private final String name;
+    private final int id;
     private String role;
     private double salary;
 

@@ -1,14 +1,25 @@
 Order Summary:
-Order Type: Delivery
+Order Type: Pick-up
 ___________________________________________
 Quantity   | Item            | Price     
 ___________|_________________|_____________
-2          | Apple           | $5.99     
-1          | Soda            | $100.00   
-Delivery Fee: $11.20
-Tax: $6.72
-Total: $118.70
-Date and Time: 08-27-2024 15:28:26
+12         | Soda            | $100.00   
+Tax: $72.00
+Total: $1272.00
+Date and Time: 08-31-2024 21:48:42
+Thank You, Come Again
+
+=============================================
+Order Summary:
+Order Type: Dine-in
+___________________________________________
+Quantity   | Item            | Price     
+___________|_________________|_____________
+1          | Pizza           | $15.99    
+Service Fee: $0.80
+Tax: $0.96
+Total: $16.95
+Date and Time: 08-31-2024 21:48:56
 Thank You, Come Again
 
 =============================================

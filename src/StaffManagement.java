@@ -1,22 +1,25 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class StaffManagement implements StaffOperations, SetupDefaults{
-    private final List<StaffMember> staffMembers;
+    private final Map<Integer, StaffMember> staffMembers;
 
     public StaffManagement(){
-        staffMembers = new ArrayList<>();
+        staffMembers = new HashMap<>();
         initializeDefaultItems();
     }
 
     @Override
     public void initializeDefaultItems() {
-        staffMembers.add(new StaffMember("John", 111, "cook", 60000));
-        staffMembers.add(new StaffMember("Lis", 222, "Host", 40000));
-        staffMembers.add(new StaffMember("Sam", 333, "Cashier", 50000));
+        addStaffMember(new StaffMember("John", 111, "cook", 60000));
+        addStaffMember(new StaffMember("Lis", 222, "Host", 40000));
+        addStaffMember(new StaffMember("Sam", 333, "Cashier", 50000));
         }
+    private void addStaffMember(StaffMember staff) {
+        staffMembers.put(staff.getId(), staff); // Add to the map
+    }
     public void currentStaff(){
-        for(StaffMember staff : staffMembers){
+        for(StaffMember staff : staffMembers.values()){
             System.out.println(staff);
         }
     }
@@ -24,16 +27,15 @@ public class StaffManagement implements StaffOperations, SetupDefaults{
     public void handleHireStaffMember(String name, int id, String role, double salary){
 
         StaffMember newStaff = new StaffMember(name, id, role, salary);
-        staffMembers.add(newStaff);
+        staffMembers.put(id, newStaff);
             System.out.println("Staff member hired successfully.");
 
     }
     @Override
     public void handleFireStaffMember(int id){
         try {
-        StaffMember StaffToFire = findStaffById(id);
-        if (StaffToFire != null) {
-            staffMembers.remove(StaffToFire);
+        //StaffMember StaffToFire = findStaffById(id);
+        if (staffMembers.remove(id) != null) {
             System.out.println("Staff with ID "+ id + " has been fired.");
         } else {
             throw new DataNotFoundException("ID Not found Exception");
@@ -52,11 +54,9 @@ public class StaffManagement implements StaffOperations, SetupDefaults{
             } else {
                 System.out.println("Staff member not found.");
             }
-//
-
     }
     public StaffMember findStaffById(int id){
-        for(StaffMember staff: staffMembers){
+        for(StaffMember staff: staffMembers.values()){
             if(staff.getId() == id){
                 return staff;
             }

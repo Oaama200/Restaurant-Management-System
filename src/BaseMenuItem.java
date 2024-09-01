@@ -9,7 +9,6 @@ public abstract class BaseMenuItem {
     public String getItemName(){
         return itemName;
     }
-
     public double getPrice() {
         return price;
     }
