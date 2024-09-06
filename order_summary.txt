@@ -1,5 +1,6 @@
 Order Summary:
 Order Type: Pick-up
+<<<<<<< HEAD
 ___________________________________________
 Quantity   | Item            | Price     
 ___________|_________________|_____________
@@ -20,6 +21,16 @@ Service Fee: $0.80
 Tax: $0.96
 Total: $16.95
 Date and Time: 08-31-2024 21:48:56
+=======
+Order ID: 1
+__________________________________
+Quantity   | Item       | Price     
+___________|____________|_________
+3          | Pizza      | $15.99    
+Tax: $2.88
+Total: $50.85
+Date and Time: 09-05-2024 21:29:41
+>>>>>>> 42cbb85 (Migrating to maven)
 Thank You, Come Again
 
 =============================================

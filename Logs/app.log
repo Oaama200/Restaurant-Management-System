@@ -1,0 +1,70 @@
+2024-09-01 16:17:49.137 [main] INFO  org.example.Main - Application Started
+2024-09-01 16:17:49.141 [main] INFO  org.example.Main - Order file cleared
+2024-09-01 16:17:49.141 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-01 16:17:49.141 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:17:49.141 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:17:55.825 [main] WARN  org.example.Main - Invalid selection: we
+2024-09-01 16:17:55.825 [main] ERROR org.example.Main - Error, loading main menu
+2024-09-01 16:17:55.825 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-01 16:17:55.825 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:17:55.825 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:17:58.627 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-01 16:17:58.627 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:17:58.627 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:17:59.807 [main] WARN  org.example.Main - Invalid selection: wq
+2024-09-01 16:17:59.807 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:17:59.808 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:18:00.846 [main] INFO  org.example.Main - Adding a menu item
+2024-09-01 16:18:01.821 [main] INFO  org.example.Main - User entered an item name to add: ewq
+2024-09-01 16:18:02.466 [main] INFO  org.example.Main - User entered the price for the item: 2.0
+2024-09-01 16:18:02.466 [main] INFO  org.example.Main - ewq has been added to the menu.
+2024-09-01 16:18:02.467 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:18:02.467 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:18:04.219 [main] INFO  org.example.Main - Terminating the application
+2024-09-01 16:18:46.880 [main] INFO  org.example.Main - Application Started
+2024-09-01 16:18:46.882 [main] INFO  org.example.Main - Order file cleared
+2024-09-01 16:18:46.883 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-01 16:18:46.883 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:18:46.883 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:18:48.979 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-01 16:18:48.979 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:18:48.979 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:18:52.809 [main] INFO  org.example.Main - Placing an Order
+2024-09-01 16:18:52.809 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:18:52.809 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:18:54.574 [main] INFO  org.example.Main - User selected a valid order type: 2
+2024-09-01 16:18:54.574 [main] INFO  org.example.Main - Displaying current menu
+2024-09-01 16:18:54.577 [main] INFO  org.example.Main - Adding item to order
+2024-09-01 16:18:57.501 [main] INFO  org.example.Main - Name entered: Soda
+2024-09-01 16:18:57.502 [main] INFO  org.example.Main - Item found in the menu: Soda
+2024-09-01 16:19:01.323 [main] INFO  org.example.Main - quantity entered: 312
+2024-09-01 16:19:01.337 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-01 16:19:01.337 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:19:01.338 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:19:03.132 [main] INFO  org.example.Main - User chose to check out.
+2024-09-01 16:19:03.146 [main] INFO  org.example.Main - Printing Menu
+2024-09-01 16:19:03.146 [main] DEBUG org.example.Main - Getting user selection
+2024-09-01 16:19:06.112 [main] INFO  org.example.Main - Terminating the application
+2024-09-05 21:29:25.727 [main] INFO  org.example.Main - Application Started
+2024-09-05 21:29:25.739 [main] INFO  org.example.Main - Order file cleared
+2024-09-05 21:29:25.739 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-05 21:29:25.739 [main] INFO  org.example.Main - Printing Menu
+2024-09-05 21:29:25.740 [main] DEBUG org.example.Main - Getting user selection
+2024-09-05 21:29:28.157 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-05 21:29:28.158 [main] INFO  org.example.Main - Printing Menu
+2024-09-05 21:29:28.158 [main] DEBUG org.example.Main - Getting user selection
+2024-09-05 21:29:28.698 [main] INFO  org.example.Main - Placing an Order
+2024-09-05 21:29:28.698 [main] INFO  org.example.Main - Printing Menu
+2024-09-05 21:29:28.699 [main] DEBUG org.example.Main - Getting user selection
+2024-09-05 21:29:31.640 [main] INFO  org.example.Main - User selected a valid order type: 2
+2024-09-05 21:29:31.640 [main] INFO  org.example.Main - Displaying current menu
+2024-09-05 21:29:31.645 [main] INFO  org.example.Main - Adding item to order
+2024-09-05 21:29:39.197 [main] INFO  org.example.Main - Name entered: pizza
+2024-09-05 21:29:39.197 [main] INFO  org.example.Main - Item found in the menu: pizza
+2024-09-05 21:29:40.472 [main] INFO  org.example.Main - quantity entered: 3
+2024-09-05 21:29:40.480 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-05 21:29:40.480 [main] INFO  org.example.Main - Printing Menu
+2024-09-05 21:29:40.480 [main] DEBUG org.example.Main - Getting user selection
+2024-09-05 21:29:41.407 [main] INFO  org.example.Main - User chose to check out.
+2024-09-05 21:29:41.439 [main] INFO  org.example.Main - Printing Menu
+2024-09-05 21:29:41.439 [main] DEBUG org.example.Main - Getting user selection
