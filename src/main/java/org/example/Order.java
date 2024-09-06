@@ -108,7 +108,6 @@ public class Order implements OrderOperations, FeeCalculable {
         orderHistory.add(orderSummary, orderIdCounter);
         orderIdCounter++;
 
-        printOrderHistory();
         writeToFile(orderSummary);
         orderItems.clear();
     }

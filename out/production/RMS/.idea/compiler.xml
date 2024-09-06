@@ -9,5 +9,8 @@
         <module name="RMS_maven" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RMS_maven" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>

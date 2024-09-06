@@ -61,3 +61,41 @@
 2024-08-31 21:39:11.973 [main] INFO  Main - User chose to check out.
 2024-08-31 21:39:11.981 [main] INFO  Main - Printing Menu
 2024-08-31 21:39:11.981 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:24.752 [main] INFO  Main - Application Started
+2024-08-31 21:48:24.758 [main] INFO  Main - Order file cleared
+2024-08-31 21:48:24.758 [main] INFO  Main - Loading Main Menu
+2024-08-31 21:48:24.758 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:24.758 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:30.751 [main] INFO  Main - Displaying Customer Menu
+2024-08-31 21:48:30.752 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:30.752 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:31.829 [main] INFO  Main - Placing an Order
+2024-08-31 21:48:31.829 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:31.829 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:33.809 [main] INFO  Main - User selected a valid order type: 2
+2024-08-31 21:48:33.809 [main] INFO  Main - Displaying current menu
+2024-08-31 21:48:33.812 [main] INFO  Main - Adding item to order
+2024-08-31 21:48:38.751 [main] INFO  Main - Name entered: Soda
+2024-08-31 21:48:38.751 [main] INFO  Main - Item found in the menu: Soda
+2024-08-31 21:48:40.426 [main] INFO  Main - quantity entered: 12
+2024-08-31 21:48:40.429 [main] INFO  Main - Prompting user to continue ordering or check out.
+2024-08-31 21:48:40.429 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:40.429 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:42.127 [main] INFO  Main - User chose to check out.
+2024-08-31 21:48:42.135 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:42.135 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:44.959 [main] INFO  Main - Placing an Order
+2024-08-31 21:48:44.959 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:44.960 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:48.844 [main] INFO  Main - User selected a valid order type: 1
+2024-08-31 21:48:48.844 [main] INFO  Main - Displaying current menu
+2024-08-31 21:48:48.845 [main] INFO  Main - Adding item to order
+2024-08-31 21:48:52.482 [main] INFO  Main - Name entered: Pizza
+2024-08-31 21:48:52.483 [main] INFO  Main - Item found in the menu: Pizza
+2024-08-31 21:48:54.267 [main] INFO  Main - quantity entered: 1
+2024-08-31 21:48:54.268 [main] INFO  Main - Prompting user to continue ordering or check out.
+2024-08-31 21:48:54.269 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:54.269 [main] DEBUG Main - Getting user selection
+2024-08-31 21:48:56.226 [main] INFO  Main - User chose to check out.
+2024-08-31 21:48:56.228 [main] INFO  Main - Printing Menu
+2024-08-31 21:48:56.228 [main] DEBUG Main - Getting user selection

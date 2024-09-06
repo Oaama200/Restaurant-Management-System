@@ -68,3 +68,36 @@
 2024-09-05 21:29:41.407 [main] INFO  org.example.Main - User chose to check out.
 2024-09-05 21:29:41.439 [main] INFO  org.example.Main - Printing Menu
 2024-09-05 21:29:41.439 [main] DEBUG org.example.Main - Getting user selection
+2024-09-06 02:42:50.408 [main] INFO  org.example.Main - Application Started
+2024-09-06 02:42:50.418 [main] INFO  org.example.Main - Order file cleared
+2024-09-06 02:42:50.418 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-06 02:42:50.418 [main] INFO  org.example.Main - Printing Menu
+2024-09-06 02:42:50.419 [main] DEBUG org.example.Main - Getting user selection
+2024-09-06 02:42:56.682 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-06 02:42:56.682 [main] INFO  org.example.Main - Printing Menu
+2024-09-06 02:42:56.682 [main] DEBUG org.example.Main - Getting user selection
+2024-09-06 02:42:58.300 [main] INFO  org.example.Main - Placing an Order
+2024-09-06 02:42:58.300 [main] INFO  org.example.Main - Printing Menu
+2024-09-06 02:42:58.300 [main] DEBUG org.example.Main - Getting user selection
+2024-09-06 02:43:03.911 [main] INFO  org.example.Main - User selected a valid order type: 2
+2024-09-06 02:43:03.911 [main] INFO  org.example.Main - Displaying current menu
+2024-09-06 02:43:03.914 [main] INFO  org.example.Main - Adding item to order
+2024-09-06 02:43:05.909 [main] INFO  org.example.Main - Name entered: sodsa
+2024-09-06 02:43:05.909 [main] WARN  org.example.Main - Item not found in the menu: sodsa
+2024-09-06 02:43:05.909 [main] ERROR org.example.Main - Error while adding item to order: Name Not found Exception
+2024-09-06 02:43:05.909 [main] INFO  org.example.Main - Displaying current menu
+2024-09-06 02:43:05.910 [main] INFO  org.example.Main - Adding item to order
+2024-09-06 02:43:08.154 [main] INFO  org.example.Main - Name entered: 2
+2024-09-06 02:43:08.154 [main] WARN  org.example.Main - Item not found in the menu: 2
+2024-09-06 02:43:08.154 [main] ERROR org.example.Main - Error while adding item to order: Name Not found Exception
+2024-09-06 02:43:08.154 [main] INFO  org.example.Main - Displaying current menu
+2024-09-06 02:43:08.155 [main] INFO  org.example.Main - Adding item to order
+2024-09-06 02:43:10.746 [main] INFO  org.example.Main - Name entered: SOda
+2024-09-06 02:43:10.746 [main] INFO  org.example.Main - Item found in the menu: SOda
+2024-09-06 02:43:11.893 [main] INFO  org.example.Main - quantity entered: 3
+2024-09-06 02:43:11.895 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-06 02:43:11.895 [main] INFO  org.example.Main - Printing Menu
+2024-09-06 02:43:11.895 [main] DEBUG org.example.Main - Getting user selection
+2024-09-06 02:43:12.847 [main] INFO  org.example.Main - User chose to check out.
+2024-09-06 02:43:12.864 [main] INFO  org.example.Main - Printing Menu
+2024-09-06 02:43:12.864 [main] DEBUG org.example.Main - Getting user selection
