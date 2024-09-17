@@ -2,6 +2,17 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.customer.CustomerMenuHandler;
+import org.example.employee.EmployeeMenuHandler;
+import org.example.exceptions.InvalidSelectionException;
+import org.example.menu.Menu;
+import org.example.menu.MenuHandler;
+import org.example.order.Order;
+import org.example.order.OrderHistoryHandler;
+import org.example.staff.StaffManagement;
+import org.example.staff.StaffMenuHandler;
+import org.example.utilities.Constants;
+import org.example.utilities.CustomLinkedList;
 
 import java.util.Scanner;
 
@@ -22,7 +33,7 @@ public class Main {
         menuHandler = new MenuHandler(input, logger);
         orderHistoryHandler = new OrderHistoryHandler(input, logger, order);
         customerMenuHandler = new CustomerMenuHandler(input, logger, menu, order);
-        staffMenuHandler = new StaffMenuHandler(input, logger, menu, order, staffManagement, orderHistory);
+        staffMenuHandler = new StaffMenuHandler(input, logger, staffManagement);
         employeeMenuHandler = new EmployeeMenuHandler(input, logger, menu);
     }
 
