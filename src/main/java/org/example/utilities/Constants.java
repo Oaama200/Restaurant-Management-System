@@ -13,6 +13,7 @@ public final class Constants {
     public static final String PICK_UP_NAME;
     public static final String DELIVERY_NAME;
     public static final String WELCOME_MESSAGE;
+    public static final int DISCOUNT_THRESHOLD;
 
     static {
         DINE_IN = 1;
@@ -23,6 +24,7 @@ public final class Constants {
         PICK_UP_NAME = "Pick-up";
         DELIVERY_NAME = "Delivery";
         WELCOME_MESSAGE = "****** Welcome to Restaurant Management System *******";
+        DISCOUNT_THRESHOLD = 100;
     }
 
     public static void clearOrderFile() {

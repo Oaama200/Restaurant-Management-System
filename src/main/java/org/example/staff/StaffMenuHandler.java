@@ -39,38 +39,34 @@ public class StaffMenuHandler {
             StaffManagementOption option = StaffManagementOption.getByCode(selection);
 
             switch (option) {
-                case CURRENT_STAFF:
+                case CURRENT_STAFF -> {
                     logger.info("Displaying current staff Menu");
                     staffManagement.printCurrentStaff();
-                    break;
-
-                case HIRE_STAFF:
+                }
+                case HIRE_STAFF -> {
                     logger.info("Hiring a staff");
                     handleHireStaffMember();
-                    break;
-
-                case FIRE_STAFF:
+                }
+                case FIRE_STAFF -> {
                     logger.info("Firing a staff");
                     handleFireStaffMember();
-                    break;
-
-                case UPDATE_STAFF:
+                }
+                case UPDATE_STAFF -> {
                     logger.info("Updating staff info");
                     handleUpdateStaffInfo();
-                    break;
-
-                case RETURN:
+                }
+                case RETURN -> {
                     logger.info("Returning to the employee menu");
                     return false;
-
-                case QUIT:
+                }
+                case QUIT -> {
                     logger.info("Terminating the application");
                     System.exit(0);
-                    break;
-
-                default:
+                }
+                default -> {
                     logger.warn("Invalid selection: " + selection);
                     throw new InvalidSelectionException();
+                }
             }
             return true;
         } catch (IllegalArgumentException e) {

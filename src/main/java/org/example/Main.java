@@ -38,6 +38,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        // Uncomment the following method call to test the reflection class
+        // Reflection.executeReflectionDemo(StaffManagement.class);
         logger.info("Application Started");
         Constants.printWelcome();
         Constants.clearOrderFile();

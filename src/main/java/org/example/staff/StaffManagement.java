@@ -5,8 +5,6 @@ import org.example.utilities.SetupDefaults;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Consumer;
-import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 public class StaffManagement implements StaffOperations, SetupDefaults {
@@ -29,10 +27,7 @@ public class StaffManagement implements StaffOperations, SetupDefaults {
     }
 
     public void printCurrentStaff() {
-        Consumer<StaffMember> printStaffInfo = staff -> System.out.println(staff.toString());
-        for (StaffMember staff : staffMembers.values()) {
-            printStaffInfo.accept(staff);
-        }
+        staffMembers.values().stream().forEach(staffMember -> System.out.println(staffMember.toString()));
     }
 
     public void handleHireStaffMember(String name, int id, String role, double salary) {
@@ -44,7 +39,12 @@ public class StaffManagement implements StaffOperations, SetupDefaults {
     @Override
     public void handleFireStaffMember(int id) {
         try {
-            if (staffMembers.remove(id) != null) {
+            boolean isRemoved = staffMembers.entrySet().stream()
+                    .filter(staffMember -> staffMember.getValue().getId() == id)
+                    .findFirst()
+                    .map(staffMember -> staffMembers.remove(staffMember.getKey()) != null)
+                    .orElse(false);
+            if (isRemoved) {
                 System.out.println("Staff with ID " + id + " has been fired.");
             } else {
                 throw new DataNotFoundException("ID Not found Exception");
@@ -70,16 +70,16 @@ public class StaffManagement implements StaffOperations, SetupDefaults {
     }
 
     public StaffMember findStaffById(int id) {
-        for (StaffMember staff : staffMembers.values()) {
-            if (staff.getId() == id) {
-                return staff;
-            }
-        }
-        return null;
+        return staffMembers.values().stream()
+                .filter(staffMember -> staffMember.getId() == id)
+                .findFirst()
+                .orElse(null);
     }
 
     public boolean checkIfIdExists(int id) {
-        Function<Integer, Boolean> idExistsCheck = staffId -> findStaffById(staffId) != null;
-        return idExistsCheck.apply(id);
+        return staffMembers.values().stream()
+                .anyMatch(staffMember -> staffMember.getId() == id);
+
     }
 }
+

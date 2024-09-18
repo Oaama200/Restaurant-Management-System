@@ -1432,3 +1432,174 @@
 2024-09-16 22:04:17.098 [main] WARN  org.example.Main - Invalid selection: edwq
 2024-09-16 22:04:17.099 [main] INFO  org.example.Main - Printing Menu
 2024-09-16 22:04:17.099 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:16:01.491 [main] INFO  org.example.Main - Application Started
+2024-09-17 10:16:01.500 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 10:16:01.501 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 10:16:01.512 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:16:01.512 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:16:04.622 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-17 10:16:04.623 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:16:04.624 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:16:08.172 [main] INFO  org.example.Main - Adding a menu item
+2024-09-17 10:16:11.411 [main] INFO  org.example.Main - User entered an item name to add: Soda
+2024-09-17 10:16:11.412 [main] WARN  org.example.Main - User entered a duplicate name: Soda
+2024-09-17 10:16:11.412 [main] ERROR org.example.Main - Error while adding an item: Item Already Exists Exception
+2024-09-17 10:16:11.412 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:16:11.413 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:16:15.774 [main] INFO  org.example.Main - Deleting a menu item
+2024-09-17 10:16:20.827 [main] INFO  org.example.Main - User entered a name to delete: S
+2024-09-17 10:16:20.827 [main] WARN  org.example.Main - Attempt to remove non-existent item: S
+2024-09-17 10:16:20.828 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:16:20.828 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:16:33.274 [main] INFO  org.example.Main - Deleting a menu item
+2024-09-17 10:16:36.475 [main] INFO  org.example.Main - User entered a name to delete: Soda
+2024-09-17 10:16:36.475 [main] INFO  org.example.Main - Soda has been removed from the menu.
+2024-09-17 10:16:36.475 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:16:36.476 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:16:39.344 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-17 10:16:39.349 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:16:39.349 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:28:26.086 [main] INFO  org.example.Main - Application Started
+2024-09-17 10:28:26.086 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 10:28:26.086 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 10:28:26.086 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:28:26.086 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:28:30.402 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-17 10:28:30.417 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:28:30.417 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:28:32.136 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-17 10:28:32.136 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:28:32.136 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:29:31.555 [main] INFO  org.example.Main - Application Started
+2024-09-17 10:29:31.555 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 10:29:31.555 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 10:29:31.555 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:29:31.555 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:29:33.211 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-17 10:29:33.211 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:29:33.223 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:29:34.401 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-17 10:29:34.406 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:29:34.406 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:33:28.238 [main] INFO  org.example.Main - Application Started
+2024-09-17 10:33:28.238 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 10:33:28.238 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 10:33:28.238 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:33:28.238 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:33:30.470 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-17 10:33:30.470 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:33:30.470 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:33:34.030 [main] INFO  org.example.Main - Displaying staff menu
+2024-09-17 10:33:34.038 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:33:34.039 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:33:39.507 [main] INFO  org.example.Main - Displaying current staff Menu
+2024-09-17 10:33:39.507 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:33:39.507 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:54:32.636 [main] INFO  org.example.Main - Application Started
+2024-09-17 10:54:32.639 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 10:54:32.640 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 10:54:32.640 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:54:32.640 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:54:34.726 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-17 10:54:34.727 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:54:34.727 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:54:38.302 [main] INFO  org.example.Main - Displaying staff menu
+2024-09-17 10:54:38.302 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:54:38.303 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:54:42.699 [main] INFO  org.example.Main - Firing a staff
+2024-09-17 10:54:47.994 [main] INFO  org.example.Main - User entered: 2
+2024-09-17 10:54:47.996 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:54:47.996 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:54:53.561 [main] INFO  org.example.Main - Hiring a staff
+2024-09-17 10:54:55.961 [main] INFO  org.example.Main - User entered: 111
+2024-09-17 10:54:55.962 [main] WARN  org.example.Main - Staff Already hired: 111
+2024-09-17 10:54:55.962 [main] ERROR org.example.Main - Error while hiring a staff: Staff Already Hired Exception
+2024-09-17 10:54:55.962 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:54:55.962 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:55:02.306 [main] INFO  org.example.Main - Firing a staff
+2024-09-17 10:55:04.021 [main] INFO  org.example.Main - User entered: 111
+2024-09-17 10:55:04.022 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:55:04.022 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:59:03.677 [main] INFO  org.example.Main - Application Started
+2024-09-17 10:59:03.680 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 10:59:03.680 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 10:59:03.680 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:59:03.680 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:59:06.033 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-17 10:59:06.034 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:59:06.034 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:59:06.633 [main] INFO  org.example.Main - Displaying staff menu
+2024-09-17 10:59:06.633 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:59:06.634 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:59:08.290 [main] INFO  org.example.Main - Hiring a staff
+2024-09-17 10:59:12.234 [main] INFO  org.example.Main - User entered: 222
+2024-09-17 10:59:12.235 [main] WARN  org.example.Main - Staff Already hired: 222
+2024-09-17 10:59:12.236 [main] ERROR org.example.Main - Error while hiring a staff: Staff Already Hired Exception
+2024-09-17 10:59:12.236 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:59:12.236 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:59:17.576 [main] INFO  org.example.Main - Hiring a staff
+2024-09-17 10:59:19.171 [main] INFO  org.example.Main - User entered: 1221
+2024-09-17 10:59:20.100 [main] INFO  org.example.Main - Name entered: 2
+2024-09-17 10:59:21.286 [main] INFO  org.example.Main - Role entered: w
+2024-09-17 10:59:22.278 [main] INFO  org.example.Main - Salary entered: 12.0
+2024-09-17 10:59:22.279 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:59:22.279 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 10:59:24.710 [main] INFO  org.example.Main - Displaying current staff Menu
+2024-09-17 10:59:24.711 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 10:59:24.712 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:12:59.102 [main] INFO  org.example.Main - Application Started
+2024-09-17 11:12:59.105 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 11:12:59.105 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 11:12:59.106 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:12:59.106 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:13:03.446 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-17 11:13:03.447 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:13:03.447 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:13:04.539 [main] INFO  org.example.Main - Placing an Order
+2024-09-17 11:13:04.539 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:13:04.539 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:13:06.515 [main] INFO  org.example.Main - User selected a valid order type: 1
+2024-09-17 11:13:06.515 [main] INFO  org.example.Main - Displaying current menu
+2024-09-17 11:13:06.519 [main] INFO  org.example.Main - Adding item to order
+2024-09-17 11:13:07.693 [main] INFO  org.example.Main - Name entered: SOda
+2024-09-17 11:13:07.694 [main] INFO  org.example.Main - Item found in the menu: SOda
+2024-09-17 11:13:08.884 [main] INFO  org.example.Main - quantity entered: 2
+2024-09-17 11:13:08.886 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-17 11:13:08.886 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:13:08.886 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:13:10.561 [main] INFO  org.example.Main - User chose to check out.
+2024-09-17 11:13:10.583 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:13:10.583 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:24:36.424 [main] INFO  org.example.Main - Application Started
+2024-09-17 11:24:36.434 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 11:24:36.434 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 11:24:36.434 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:24:36.435 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:24:41.215 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-17 11:24:41.215 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:24:41.216 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:24:43.397 [main] INFO  org.example.Main - Placing an Order
+2024-09-17 11:24:43.397 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:24:43.397 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:24:44.990 [main] INFO  org.example.Main - User selected a valid order type: 1
+2024-09-17 11:24:44.990 [main] INFO  org.example.Main - Displaying current menu
+2024-09-17 11:24:44.993 [main] INFO  org.example.Main - Adding item to order
+2024-09-17 11:24:46.636 [main] INFO  org.example.Main - Name entered: SOda
+2024-09-17 11:24:46.637 [main] INFO  org.example.Main - Item found in the menu: SOda
+2024-09-17 11:24:47.912 [main] INFO  org.example.Main - quantity entered: 3
+2024-09-17 11:24:47.914 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-17 11:24:47.914 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:24:47.914 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 11:24:49.570 [main] INFO  org.example.Main - User chose to check out.
+2024-09-17 11:24:49.583 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 11:24:49.583 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 12:27:16.018 [main] INFO  org.example.Main - Application Started
+2024-09-17 12:27:16.021 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 12:27:16.021 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 12:27:16.021 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 12:27:16.021 [main] DEBUG org.example.Main - Getting user selection
+2024-09-17 18:18:02.911 [main] INFO  org.example.Main - Application Started
+2024-09-17 18:18:02.915 [main] INFO  org.example.Main - Order file cleared
+2024-09-17 18:18:02.915 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-17 18:18:02.915 [main] INFO  org.example.Main - Printing Menu
+2024-09-17 18:18:02.916 [main] DEBUG org.example.Main - Getting user selection

@@ -47,11 +47,12 @@ public class Order implements OrderOperations, FeeCalculable {
 
     public double processOrderWithDiscount() {
         double total = calculateTotal();
-        double discountedTotal = 0;
-        if (total >= 100) {
-             discountedTotal = applyDiscount.calculate(total, FeeType.DISCOUNT_RATE.getRate());
-        }
-        return discountedTotal;
+
+        return orderItems.stream()
+                .filter(orderItem -> total >= Constants.DISCOUNT_THRESHOLD)
+                .mapToDouble(orderItem -> applyDiscount.calculate(orderItem.getPrice() * orderItem.getQuantity(),
+                        FeeType.DISCOUNT_RATE.getRate()))
+                .sum();
     }
 
     @Override
@@ -108,11 +109,9 @@ public class Order implements OrderOperations, FeeCalculable {
 
     @Override
     public double calculateTotal() {
-        double total = 0;
-        for (OrderItem orderItem : orderItems) {
-            total += orderItem.getPrice() * orderItem.getQuantity();
-        }
-        return total;
+        return orderItems.stream()
+                .mapToDouble(item -> item.getPrice() * item.getQuantity())
+                .sum();
     }
     public double calculateSubTotal() {
         return calculateTotal() - processOrderWithDiscount();

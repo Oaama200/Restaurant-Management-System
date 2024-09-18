@@ -7,8 +7,6 @@ import org.example.utilities.SetupDefaults;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.function.Predicate;
-import java.util.function.Consumer;
 import java.util.function.BiConsumer;
 
 public class Menu implements MenuOperations, SetupDefaults {
@@ -27,28 +25,26 @@ public class Menu implements MenuOperations, SetupDefaults {
         addMenuItem(new MenuItem("Fries", 5.99));
         addMenuItem(new MenuItem("Soda", 100));
     }
+
     private void addMenuItem(MenuItem item) {
         uniqueItems.add(item);
     }
+
     public void displayDefaultMenu() {
-        Consumer<MenuItem> printItem = item -> System.out.println(item);
-        uniqueItems.forEach(printItem);
+        uniqueItems.stream().forEach(item -> System.out.println(item));
     }
+
     @Override
     public void addingItem(String itemName, double price) {
         MenuItem currentItem = new MenuItem(itemName, price);
         addMenuItem(currentItem);
         logger.info(itemName + " has been added to the menu.");
     }
+
     @Override
     public void removeItem(String itemName) {
-        MenuItem itemToDelete = findItemByName(itemName.toLowerCase());
-        if (itemToDelete != null) {
-            uniqueItems.remove(itemToDelete);
-            logger.info(itemName + " has been removed from the menu.");
-        } else {
-            logger.warn("Attempt to remove non-existent item: " + itemName);
-        }
+        uniqueItems.removeIf(item -> item.getItemName().equalsIgnoreCase(itemName));
+
     }
 
     @Override
@@ -63,17 +59,15 @@ public class Menu implements MenuOperations, SetupDefaults {
             logger.warn("Attempt to update price of non-existent item: " + itemName);
         }
     }
+
     public MenuItem findItemByName(String itemName) {
-        Predicate<MenuItem> isMatchingItem = item -> item.getItemName().equalsIgnoreCase(itemName);
-        for (MenuItem item : uniqueItems) {
-            if (isMatchingItem.test(item)) {
-                return item;
-            }
-        }
-        return null;
+        return uniqueItems.stream()
+                .filter(item -> item.getItemName().equalsIgnoreCase(itemName))
+                .findFirst()
+                .orElse(null);
     }
 
     public Boolean checkIfItemExists(String itemName) {
-            return findItemByName(itemName) != null;
+        return findItemByName(itemName) != null;
     }
 }
