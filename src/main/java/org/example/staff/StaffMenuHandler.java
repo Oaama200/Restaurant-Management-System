@@ -1,6 +1,7 @@
 package org.example.staff;
 
 import org.apache.logging.log4j.Logger;
+import org.example.HireStaffMemberThread;
 import org.example.exceptions.DataNotFoundException;
 import org.example.exceptions.DuplicateNameException;
 import org.example.exceptions.InvalidSalaryException;
@@ -98,7 +99,9 @@ public class StaffMenuHandler {
                     logger.warn("Invalid salary entered: " + staffSalary);
                     throw new InvalidSalaryException();
                 }
-                staffManagement.handleHireStaffMember(staffName, staffId, staffRole, staffSalary);
+                //staffManagement.handleHireStaffMember(staffName, staffId, staffRole, staffSalary);
+                Thread HireStaffMemberThread = new Thread(new HireStaffMemberThread(staffName, staffId, staffRole, staffSalary));
+                HireStaffMemberThread.start();
             }
         } catch (DuplicateNameException | InvalidSalaryException e) {
             System.out.println(e.getMessage());

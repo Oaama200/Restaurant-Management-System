@@ -1,18 +1,19 @@
 package org.example.order;
 
+import org.example.FileWriterRunnable;
 import org.example.menu.Menu;
 import org.example.menu.MenuItem;
 import org.example.utilities.Constants;
 import org.example.utilities.CustomLinkedList;
 import org.example.utilities.FeeCalculable;
 import org.example.utilities.FeeType;
-
 import java.util.ArrayList;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 import java.util.List;
+
 
 @FunctionalInterface
 interface DiscountCalculator<T> {
@@ -38,6 +39,7 @@ public class Order implements OrderOperations, FeeCalculable {
         this.orderHistory = new CustomLinkedList<>();
         this.menu = menu;
     }
+
     DiscountCalculator<Double> applyDiscount = (total, discountRate) -> total * discountRate;
 
     DiscountFormatter<Double> formatDiscount = discount -> String.format("-$%.2f", discount);
@@ -153,7 +155,9 @@ public class Order implements OrderOperations, FeeCalculable {
         orderHistory.add(orderSummary, orderIdCounter);
         orderIdCounter++;
 
-        writeToFile(orderSummary);
+        //writeToFile(orderSummary);
+        Thread fileWriterThread = new Thread(new FileWriterRunnable(orderSummary));
+        fileWriterThread.start();
         orderItems.clear();
     }
 
@@ -202,7 +206,8 @@ public class Order implements OrderOperations, FeeCalculable {
         System.out.println(orderSummary.toString());
     }
 
-    private void writeToFile(StringBuilder orderSummary) {
+
+    public static void writeToFile(StringBuilder orderSummary) {
         try (FileWriter fileWriter = new FileWriter("order_summary.txt", true);
              PrintWriter printWriter = new PrintWriter(fileWriter)) {
             printWriter.println(orderSummary.toString());
@@ -212,4 +217,5 @@ public class Order implements OrderOperations, FeeCalculable {
             e.printStackTrace();
         }
     }
+
 }

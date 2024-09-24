@@ -1603,3 +1603,486 @@
 2024-09-17 18:18:02.915 [main] INFO  org.example.Main - Loading Main Menu
 2024-09-17 18:18:02.915 [main] INFO  org.example.Main - Printing Menu
 2024-09-17 18:18:02.916 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:32:46.202 [main] INFO  org.example.Main - Application Started
+2024-09-23 10:32:46.213 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 10:32:46.213 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 10:32:46.220 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:32:46.220 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:32:52.749 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-23 10:32:52.755 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:32:52.755 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:32:59.586 [main] INFO  org.example.Main - Displaying staff menu
+2024-09-23 10:32:59.594 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:32:59.594 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:06.467 [main] INFO  org.example.Main - Returning to the employee menu
+2024-09-23 10:33:06.467 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:06.467 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:10.950 [main] INFO  org.example.Main - Displaying Order History menu
+2024-09-23 10:33:10.958 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:10.958 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:14.564 [main] WARN  org.example.Main - Invalid selection: 7
+2024-09-23 10:33:14.564 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:14.564 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:19.765 [main] INFO  org.example.Main - Returning to the employee menu
+2024-09-23 10:33:19.765 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:19.765 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:21.459 [main] INFO  org.example.Main - Returning to Main Menu
+2024-09-23 10:33:21.459 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 10:33:21.459 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:21.459 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:23.246 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-23 10:33:23.255 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:23.255 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:34.244 [main] INFO  org.example.Main - Placing an Order
+2024-09-23 10:33:34.245 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:34.245 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:37.854 [main] INFO  org.example.Main - User selected a valid order type: 1
+2024-09-23 10:33:37.854 [main] INFO  org.example.Main - Displaying current menu
+2024-09-23 10:33:37.859 [main] INFO  org.example.Main - Adding item to order
+2024-09-23 10:33:41.390 [main] INFO  org.example.Main - Name entered: SOda
+2024-09-23 10:33:41.390 [main] INFO  org.example.Main - Item found in the menu: SOda
+2024-09-23 10:33:43.032 [main] INFO  org.example.Main - quantity entered: 3
+2024-09-23 10:33:43.041 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-23 10:33:43.041 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:43.041 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 10:33:47.947 [main] INFO  org.example.Main - User chose to check out.
+2024-09-23 10:33:47.983 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 10:33:47.983 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:47:03.032 [main] INFO  org.example.Main - Application Started
+2024-09-23 11:47:03.035 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 11:47:03.035 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 11:47:03.036 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:47:03.036 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:47:05.574 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-23 11:47:05.575 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:47:05.576 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:47:07.059 [main] INFO  org.example.Main - Placing an Order
+2024-09-23 11:47:07.059 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:47:07.059 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:47:08.479 [main] INFO  org.example.Main - User selected a valid order type: 2
+2024-09-23 11:47:08.479 [main] INFO  org.example.Main - Displaying current menu
+2024-09-23 11:47:08.482 [main] INFO  org.example.Main - Adding item to order
+2024-09-23 11:47:11.991 [main] INFO  org.example.Main - Name entered: SOda
+2024-09-23 11:47:11.992 [main] INFO  org.example.Main - Item found in the menu: SOda
+2024-09-23 11:47:12.798 [main] INFO  org.example.Main - quantity entered: 44
+2024-09-23 11:47:12.800 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-23 11:47:12.800 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:47:12.800 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:47:13.964 [main] INFO  org.example.Main - User chose to check out.
+2024-09-23 11:47:13.985 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:47:13.985 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:47:18.102 [main] INFO  org.example.Main - Terminating the application
+2024-09-23 11:49:22.648 [main] INFO  org.example.Main - Application Started
+2024-09-23 11:49:22.651 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 11:49:22.651 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 11:49:22.652 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:49:22.652 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:49:29.900 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-23 11:49:29.901 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:49:29.901 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:49:31.169 [main] INFO  org.example.Main - Placing an Order
+2024-09-23 11:49:31.169 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:49:31.169 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:49:32.573 [main] INFO  org.example.Main - User selected a valid order type: 2
+2024-09-23 11:49:32.573 [main] INFO  org.example.Main - Displaying current menu
+2024-09-23 11:49:32.577 [main] INFO  org.example.Main - Adding item to order
+2024-09-23 11:49:34.478 [main] INFO  org.example.Main - Name entered: SOda
+2024-09-23 11:49:34.479 [main] INFO  org.example.Main - Item found in the menu: SOda
+2024-09-23 11:49:35.114 [main] INFO  org.example.Main - quantity entered: 33
+2024-09-23 11:49:35.115 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-23 11:49:35.115 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:49:35.115 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:49:36.073 [main] INFO  org.example.Main - User chose to check out.
+2024-09-23 11:49:36.094 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 11:49:36.095 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 11:49:38.359 [main] INFO  org.example.Main - Terminating the application
+2024-09-23 12:17:29.842 [main] INFO  org.example.Main - Application Started
+2024-09-23 12:17:29.844 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 12:17:29.844 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 12:17:29.845 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 12:17:29.845 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 12:17:34.523 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-23 12:17:34.523 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 12:17:34.524 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 12:17:39.402 [main] INFO  org.example.Main - Displaying staff menu
+2024-09-23 12:17:39.404 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 12:17:39.404 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 12:17:41.522 [main] INFO  org.example.Main - Hiring a staff
+2024-09-23 12:17:44.248 [main] INFO  org.example.Main - User entered: 2
+2024-09-23 12:17:46.392 [main] INFO  org.example.Main - Name entered: wq
+2024-09-23 12:17:48.668 [main] INFO  org.example.Main - Role entered: ewqe
+2024-09-23 12:17:51.457 [main] INFO  org.example.Main - Salary entered: 12232.0
+2024-09-23 12:17:51.458 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 12:17:51.458 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 12:17:52.947 [main] INFO  org.example.Main - Displaying current staff Menu
+2024-09-23 12:17:52.949 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 12:17:52.949 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:05:14.137 [main] INFO  org.example.Main - Application Started
+2024-09-23 14:05:14.140 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 14:05:14.140 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 14:05:14.142 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:05:14.142 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:05:53.678 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-23 14:05:53.679 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:05:53.679 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:05:55.410 [main] INFO  org.example.Main - Placing an Order
+2024-09-23 14:05:55.410 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:05:55.410 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:05:56.619 [main] INFO  org.example.Main - User selected a valid order type: 2
+2024-09-23 14:05:56.619 [main] INFO  org.example.Main - Displaying current menu
+2024-09-23 14:05:56.622 [main] INFO  org.example.Main - Adding item to order
+2024-09-23 14:05:58.676 [main] INFO  org.example.Main - Name entered: Soda
+2024-09-23 14:05:58.677 [main] INFO  org.example.Main - Item found in the menu: Soda
+2024-09-23 14:05:59.730 [main] INFO  org.example.Main - quantity entered: 3
+2024-09-23 14:05:59.731 [main] INFO  org.example.Main - Prompting user to continue ordering or check out.
+2024-09-23 14:05:59.731 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:05:59.731 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:06:01.012 [main] INFO  org.example.Main - User chose to check out.
+2024-09-23 14:06:01.028 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:06:01.029 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:06:02.730 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-23 14:06:02.731 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:06:02.731 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:06:05.014 [main] INFO  org.example.Main - Terminating the application
+2024-09-23 14:47:37.868 [pool-2-thread-3] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:47:37.879 [pool-2-thread-3] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:47:37.879 [pool-2-thread-3] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:47:37.880 [pool-2-thread-3] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:47:37.880 [pool-2-thread-3] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:47:37.880 [pool-2-thread-6] INFO  org.example.ConnectionPool - pool-2-thread-6 is waiting for a connection
+2024-09-23 14:47:37.880 [pool-2-thread-2] INFO  org.example.ConnectionPool - pool-2-thread-2 is waiting for a connection
+2024-09-23 14:47:37.880 [pool-2-thread-7] INFO  org.example.ConnectionPool - pool-2-thread-7 is waiting for a connection
+2024-09-23 14:47:37.880 [pool-2-thread-3] INFO  org.example.ConnectionPool - pool-2-thread-3 is waiting for a connection
+2024-09-23 14:47:37.880 [pool-2-thread-5] INFO  org.example.ConnectionPool - pool-2-thread-5 is waiting for a connection
+2024-09-23 14:47:37.880 [pool-2-thread-4] INFO  org.example.ConnectionPool - pool-2-thread-4 is waiting for a connection
+2024-09-23 14:47:37.880 [pool-2-thread-1] INFO  org.example.ConnectionPool - pool-2-thread-1 is waiting for a connection
+2024-09-23 14:47:37.915 [main] INFO  org.example.Main - Application Started
+2024-09-23 14:47:37.916 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 14:47:37.916 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 14:47:37.917 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:47:37.917 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:47:41.052 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-23 14:47:41.053 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:47:41.054 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:47:43.366 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-23 14:47:43.369 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:47:43.369 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:47:45.183 [main] INFO  org.example.Main - Adding a menu item
+2024-09-23 14:47:47.537 [main] INFO  org.example.Main - User entered an item name to add: qwq
+2024-09-23 14:47:47.537 [main] WARN  org.example.Main - Unable to find item. No connection available.
+2024-09-23 14:47:48.693 [main] INFO  org.example.Main - User entered the price for the item: 12.0
+2024-09-23 14:47:48.693 [main] WARN  org.example.Main - Unable to add item. No connection available.
+2024-09-23 14:47:48.693 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:47:48.694 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:47:49.910 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-23 14:47:49.910 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:47:49.911 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:48:53.018 [pool-2-thread-2] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:48:53.029 [pool-2-thread-2] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:48:53.030 [pool-2-thread-2] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:48:53.030 [pool-2-thread-2] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:48:53.030 [pool-2-thread-2] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:48:53.030 [pool-2-thread-2] INFO  org.example.ConnectionPool - pool-2-thread-2 is waiting for a connection
+2024-09-23 14:48:53.030 [pool-2-thread-3] INFO  org.example.ConnectionPool - pool-2-thread-3 is waiting for a connection
+2024-09-23 14:48:53.030 [pool-2-thread-1] INFO  org.example.ConnectionPool - pool-2-thread-1 is waiting for a connection
+2024-09-23 14:48:53.030 [pool-2-thread-6] INFO  org.example.ConnectionPool - pool-2-thread-6 is waiting for a connection
+2024-09-23 14:48:53.031 [pool-2-thread-4] INFO  org.example.ConnectionPool - pool-2-thread-4 is waiting for a connection
+2024-09-23 14:48:53.031 [pool-2-thread-7] INFO  org.example.ConnectionPool - pool-2-thread-7 is waiting for a connection
+2024-09-23 14:48:53.031 [pool-2-thread-5] INFO  org.example.ConnectionPool - pool-2-thread-5 is waiting for a connection
+2024-09-23 14:48:53.037 [main] INFO  org.example.Main - Application Started
+2024-09-23 14:48:53.038 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 14:48:53.039 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 14:48:53.039 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:48:53.039 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:48:56.639 [main] INFO  org.example.Main - Displaying Customer Menu
+2024-09-23 14:48:56.639 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:48:56.640 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:48:59.696 [main] INFO  org.example.Main - Placing an Order
+2024-09-23 14:48:59.696 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:48:59.697 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:49:09.587 [pool-2-thread-1] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:49:09.598 [pool-2-thread-1] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:49:09.598 [pool-2-thread-1] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:49:09.598 [pool-2-thread-1] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:49:09.599 [pool-2-thread-1] ERROR org.example.ConnectionPool - Error creating database connection
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/yourdb
+	at java.sql.DriverManager.getConnection(DriverManager.java:708) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at org.example.ConnectionPool.getConnectionPool(ConnectionPool.java:32) ~[classes/:?]
+	at org.example.ConnectionPool.lambda$initializeConnectionPool$0(ConnectionPool.java:47) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+2024-09-23 14:49:09.599 [pool-2-thread-3] INFO  org.example.ConnectionPool - pool-2-thread-3 is waiting for a connection
+2024-09-23 14:49:09.599 [pool-2-thread-1] INFO  org.example.ConnectionPool - pool-2-thread-1 is waiting for a connection
+2024-09-23 14:49:09.599 [pool-2-thread-7] INFO  org.example.ConnectionPool - pool-2-thread-7 is waiting for a connection
+2024-09-23 14:49:09.599 [pool-2-thread-5] INFO  org.example.ConnectionPool - pool-2-thread-5 is waiting for a connection
+2024-09-23 14:49:09.599 [pool-2-thread-4] INFO  org.example.ConnectionPool - pool-2-thread-4 is waiting for a connection
+2024-09-23 14:49:09.599 [pool-2-thread-2] INFO  org.example.ConnectionPool - pool-2-thread-2 is waiting for a connection
+2024-09-23 14:49:09.599 [pool-2-thread-6] INFO  org.example.ConnectionPool - pool-2-thread-6 is waiting for a connection
+2024-09-23 14:49:09.607 [main] INFO  org.example.Main - Application Started
+2024-09-23 14:49:09.609 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 14:49:09.609 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 14:49:09.610 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:49:09.610 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:49:12.580 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-23 14:49:12.581 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:49:12.582 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:49:15.138 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-23 14:49:15.141 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:49:15.141 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:49:16.058 [main] INFO  org.example.Main - Adding a menu item
+2024-09-23 14:49:19.522 [main] INFO  org.example.Main - User entered an item name to add: sdfdsf
+2024-09-23 14:49:19.523 [main] WARN  org.example.Main - Unable to find item. No connection available.
+2024-09-23 14:49:20.914 [main] INFO  org.example.Main - User entered the price for the item: 32222.0
+2024-09-23 14:49:20.914 [main] WARN  org.example.Main - Unable to add item. No connection available.
+2024-09-23 14:49:20.914 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:49:20.914 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 14:49:22.811 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-23 14:49:22.812 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 14:49:22.812 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:00:58.181 [pool-2-thread-3] INFO  org.example.ConnectionPool - pool-2-thread-3 is waiting for a connection
+2024-09-23 15:00:58.181 [pool-2-thread-2] INFO  org.example.ConnectionPool - pool-2-thread-2 is waiting for a connection
+2024-09-23 15:00:59.184 [pool-2-thread-4] INFO  org.example.ConnectionPool - pool-2-thread-4 acquired connection 1
+2024-09-23 15:00:59.184 [pool-2-thread-7] INFO  org.example.ConnectionPool - pool-2-thread-7 acquired connection 2
+2024-09-23 15:00:59.185 [pool-2-thread-1] INFO  org.example.ConnectionPool - pool-2-thread-1 acquired connection 0
+2024-09-23 15:00:59.185 [pool-2-thread-6] INFO  org.example.ConnectionPool - pool-2-thread-6 acquired connection 4
+2024-09-23 15:00:59.185 [pool-2-thread-5] INFO  org.example.ConnectionPool - pool-2-thread-5 acquired connection 3
+2024-09-23 15:00:59.192 [main] INFO  org.example.Main - Application Started
+2024-09-23 15:00:59.193 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 15:00:59.193 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 15:00:59.194 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:00:59.194 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:01:08.074 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-23 15:01:08.075 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:01:08.075 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:01:10.952 [main] INFO  org.example.Main - Adding a menu item
+2024-09-23 15:01:13.362 [main] INFO  org.example.Main - User entered an item name to add: sads
+2024-09-23 15:01:16.250 [main] INFO  org.example.Main - User entered the price for the item: 21.0
+2024-09-23 15:01:16.250 [main] INFO  org.example.Main - sads has been added to the menu using connection 1
+2024-09-23 15:01:16.250 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:01:16.251 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:01:25.287 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-23 15:01:25.290 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:01:25.290 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:01:35.644 [main] INFO  org.example.Main - Deleting a menu item
+2024-09-23 15:01:38.447 [main] INFO  org.example.Main - User entered a name to delete: we
+2024-09-23 15:01:38.447 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:01:38.448 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:01:42.050 [main] INFO  org.example.Main - Deleting a menu item
+2024-09-23 15:01:43.427 [main] INFO  org.example.Main - User entered a name to delete: soda
+2024-09-23 15:01:43.427 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:01:43.427 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:03:55.163 [main] INFO  org.example.Main - Application Started
+2024-09-23 15:03:55.166 [main] INFO  org.example.Main - Order file cleared
+2024-09-23 15:03:55.167 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-23 15:03:55.167 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:03:55.167 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:03:58.045 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-23 15:03:58.046 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:03:58.046 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:03:59.344 [main] INFO  org.example.Main - Adding a menu item
+2024-09-23 15:04:00.805 [main] INFO  org.example.Main - User entered an item name to add: wqe
+2024-09-23 15:04:00.811 [main] INFO  org.example.Main - Checked if item wqe exists using connection 0. Result: false
+2024-09-23 15:04:07.257 [main] INFO  org.example.Main - User entered the price for the item: 12.0
+2024-09-23 15:04:07.259 [main] INFO  org.example.Main - wqe has been added to the menu using connection 1
+2024-09-23 15:04:07.259 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:04:07.259 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:04:11.607 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-23 15:04:11.611 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:04:11.612 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:04:19.600 [main] INFO  org.example.Main - Deleting a menu item
+2024-09-23 15:04:21.155 [main] INFO  org.example.Main - User entered a name to delete: as
+2024-09-23 15:04:21.156 [main] WARN  org.example.Main - Item as not found in the menu. No removal performed.
+2024-09-23 15:04:21.156 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:04:21.157 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:04:25.799 [main] INFO  org.example.Main - Editing a menu item
+2024-09-23 15:04:30.620 [main] DEBUG org.example.Main - User entered item name: asd
+2024-09-23 15:04:30.621 [main] INFO  org.example.Main - Checked if item asd exists using connection 3. Result: false
+2024-09-23 15:04:30.621 [main] WARN  org.example.Main - Item not found: asd
+2024-09-23 15:04:30.621 [main] ERROR org.example.Main - Error while editing item price: Name Not found Exception
+2024-09-23 15:04:30.621 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:04:30.622 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:04:41.629 [main] INFO  org.example.Main - Editing a menu item
+2024-09-23 15:04:45.215 [main] DEBUG org.example.Main - User entered item name: soda
+2024-09-23 15:04:45.216 [main] INFO  org.example.Main - Checked if item soda exists using connection 4. Result: true
+2024-09-23 15:04:48.806 [main] DEBUG org.example.Main - User entered new price: 3.0
+2024-09-23 15:04:48.808 [main] INFO  org.example.Main - Item soda found using connection 1
+2024-09-23 15:04:48.812 [main] INFO  org.example.Main - soda price updated from 100.0 to 3.0 using connection 0
+2024-09-23 15:04:48.812 [main] INFO  org.example.Main - Printing Menu
+2024-09-23 15:04:48.812 [main] DEBUG org.example.Main - Getting user selection
+2024-09-23 15:05:01.029 [main] INFO  org.example.Main - Adding a menu item
+2024-09-23 15:05:02.163 [main] INFO  org.example.Main - User entered an item name to add: sda
+2024-09-23 15:05:02.163 [main] INFO  org.example.Main - Checked if item sda exists using connection 2. Result: false
+2024-09-24 13:00:07.469 [pool-2-thread-7] INFO  org.example.ConnectionPool - pool-2-thread-7 is waiting for a connection
+2024-09-24 13:00:07.469 [pool-2-thread-2] INFO  org.example.ConnectionPool - pool-2-thread-2 is waiting for a connection
+2024-09-24 13:00:08.473 [pool-2-thread-3] INFO  org.example.ConnectionPool - pool-2-thread-3 acquired connection 0
+2024-09-24 13:00:08.473 [pool-2-thread-5] INFO  org.example.ConnectionPool - pool-2-thread-5 acquired connection 2
+2024-09-24 13:00:08.473 [pool-2-thread-6] INFO  org.example.ConnectionPool - pool-2-thread-6 acquired connection 1
+2024-09-24 13:00:08.474 [pool-2-thread-4] INFO  org.example.ConnectionPool - pool-2-thread-4 acquired connection 4
+2024-09-24 13:00:08.474 [pool-2-thread-1] INFO  org.example.ConnectionPool - pool-2-thread-1 acquired connection 3
+2024-09-24 13:00:08.477 [pool-3-thread-6] INFO  org.example.ConnectionPool - pool-3-thread-6 is waiting for a connection
+2024-09-24 13:00:08.477 [pool-3-thread-5] INFO  org.example.ConnectionPool - pool-3-thread-5 is waiting for a connection
+2024-09-24 13:00:09.488 [pool-3-thread-1] INFO  org.example.ConnectionPool - pool-3-thread-1 acquired connection 2
+2024-09-24 13:00:09.489 [pool-3-thread-2] INFO  org.example.ConnectionPool - pool-3-thread-2 acquired connection 0
+2024-09-24 13:00:09.488 [pool-3-thread-4] INFO  org.example.ConnectionPool - pool-3-thread-4 acquired connection 4
+2024-09-24 13:00:09.489 [pool-3-thread-7] INFO  org.example.ConnectionPool - pool-3-thread-7 acquired connection 3
+2024-09-24 13:00:09.490 [pool-3-thread-3] INFO  org.example.ConnectionPool - pool-3-thread-3 acquired connection 1
+2024-09-24 13:00:09.492 [ForkJoinPool.commonPool-worker-1] INFO  org.example.Main - Salad has been added to the menu using connection 2
+2024-09-24 13:00:09.493 [ForkJoinPool.commonPool-worker-1] INFO  org.example.Main - Item Pizza found using connection 3
+2024-09-24 13:00:09.493 [ForkJoinPool.commonPool-worker-2] INFO  org.example.Main - Burger has been removed from the menu using connection 0
+2024-09-24 13:00:09.498 [ForkJoinPool.commonPool-worker-1] INFO  org.example.Main - Pizza price updated from 15.99 to 16.99 using connection 4
+2024-09-24 13:00:09.498 [main] INFO  org.example.Main - Simple operations completed.
+2024-09-24 13:00:09.562 [main] INFO  org.example.Main - Application Started
+2024-09-24 13:00:09.563 [main] INFO  org.example.Main - Order file cleared
+2024-09-24 13:00:09.563 [main] INFO  org.example.Main - Loading Main Menu
+2024-09-24 13:00:09.569 [main] INFO  org.example.Main - Printing Menu
+2024-09-24 13:00:09.569 [main] DEBUG org.example.Main - Getting user selection
+2024-09-24 13:00:26.726 [main] INFO  org.example.Main - Displaying Employee Menu
+2024-09-24 13:00:26.732 [main] INFO  org.example.Main - Printing Menu
+2024-09-24 13:00:26.732 [main] DEBUG org.example.Main - Getting user selection
+2024-09-24 13:00:28.858 [main] INFO  org.example.Main - Displaying Restaurant Menu
+2024-09-24 13:00:28.861 [main] INFO  org.example.Main - Printing Menu
+2024-09-24 13:00:28.861 [main] DEBUG org.example.Main - Getting user selection

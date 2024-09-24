@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.function.UnaryOperator;
 
 public class StaffManagement implements StaffOperations, SetupDefaults {
-    private final Map<Integer, StaffMember> staffMembers;
+    private static Map<Integer, StaffMember> staffMembers = null;
 
     public StaffManagement() {
         staffMembers = new HashMap<>();
@@ -30,7 +30,7 @@ public class StaffManagement implements StaffOperations, SetupDefaults {
         staffMembers.values().stream().forEach(staffMember -> System.out.println(staffMember.toString()));
     }
 
-    public void handleHireStaffMember(String name, int id, String role, double salary) {
+    public static void handleHireStaffMember(String name, int id, String role, double salary) {
         StaffMember newStaff = new StaffMember(name, id, role, salary);
         staffMembers.put(id, newStaff);
         System.out.println("Staff member hired successfully");
